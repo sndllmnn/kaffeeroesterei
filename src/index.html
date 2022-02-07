@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- HEAD BEREICH -->
+
+{{> head }}
+
+<body>
+  <!-- HEADER ANFANG -->
+  <header>
+    <div class="header">
+      {{> nav }}
+      <div class="header__content">
+        <div class="header__content__text">
+          <h1>Rustica</h1>
+          <h4>Bio und Fair seit 1991</h4>
+        </div>
+        <div class="shopbutton">                  
+          <a class="shopButton__cta" href="#">zum Shop</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER ENDE -->
+
+  <!-- RÖSTEREI & CAFÉ ANFANG -->
+  <div class="startseite__roesterei">
+    <div class="startseite__roesterei__cafe">
+      <div class="startseite__roesterei__cafe__text">
+        <h2 class="startseite__heading--schwarz"> Rösterei & Café </h2>
+
+        <p class="roesterei__infotext">Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei,
+          serviert im gemütlichen Café in der
+          Innenstadt.</p>
+
+        <div class="roesterei__infotext__visit">
+          <p class="roesterei__infotext">Komm uns besuchen! <br> Fraunhoferstr. 13, Kiel </p>
+          <p class="roesterei__infotext"> Mo – Fr 8–18 Uhr <br> Sa 11–18 Uhr </p>
+        </div>
+      </div>
+
+      <picture class="img--innenraum">
+        <img src="images/cafeVonInnen.png" alt="Café Rustica Kiel von innen">
+      </picture>
+    </div>
+
+    <div class="roesterei__bioFair">
+      <div class="bioFair__text">
+        <h2 class=startseite__heading--schwarz>Bio & Fair </h2>
+
+        <p class="roesterei__infotext">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien
+          leben die Blindtexte. Weit
+          hinten,
+          hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester
+          Bio
+          Qualität</p>
+      </div>
+      <picture class="img--kaffeepflanze">
+        <img src="images/kaffeepflanze.png" alt="Eine Kaffeepflanze">
+      </picture>
+    </div>
+  </div>
+
+  <!-- RÖSTEREI & CAFÉ ENDE -->
+
+  <!-- KAFFEESORTEN ENTDECKEN ANFANG -->
+
+  <div class="startseite__kaffeesorten">
+    <h2 class="startseite__heading--weiss"> Entdecke unsere Kaffeesorten </h2>
+
+    <div class="kaffeesorten_shopvorschau">
+      {{> shopkachel }}
+      {{> shopkachel }}
+      {{> shopkachel }}
+      {{> shopkachel }}
+    </div>
+    <div class="produkteButton">
+      <a href="#">alle Produkte</a>
+    </div>
+  </div>
+
+  <!-- KAFFEESORTEN ENTDECKEN ENDE -->
+
+  <!-- HERKUNFT START -->
+  <div class="herkunft">
+
+    <h3>Herkunft</h3>
+    <p>Mit unserem Kaffee Costa Rica – geröstet und verpackt im Herkunftsland – zeigen wir nun, wie
+      eine gerechtere Verteilung von Wertschöpfung aussehen kann. Im Vergleich zu kommerziellem Kaffee bleibt dabei
+      dreimal so viel Geld im Ursprungsland. Das bedeutet: #mehrWertFürAlle!.</p>
+    <div class="mehrButton">
+      <a href="#">mehr</a>
+    </div>
+
+  </div>
+
+  <!-- HERKUNFT ENDE -->
+
+  <!-- DAS STECKT DRIN START -->
+  <div class="dasStecktDrin">
+    <h2>Das steckt drin</h2>
+    <div class="dasStecktDrinInhalt">
+      <div class="costaRicaKaffee">
+        <img src="../../images/kaffeepackungCostaRicaGross.png" alt="Kaffee Costa Rica in Verpackung">
+      </div>
+      <div class="iconsEigenschaften">
+        <div class="iconMitUntertitel">
+          <img class="iconGross" src="../../images/iconKaffeetasse.svg" alt="weißes Icon mit einer Kaffeetasse">
+          <p>Bester<br>Geschmack</p>
+        </div>
+        <div class="iconMitUntertitel">
+          <img class="iconGross" src="/../../images/iconKaffeeschaufelGross.svg" alt="weißes Icon einer Kaffeeschaufel">
+          <p>Fair<br>gehandelt</p>
+        </div>
+        <div class="iconMitUntertitel">
+          <img class="iconGross" src="../../images/iconKaffeepflanze.svg" alt="weißes Icon einer Kaffeepflanze">
+          <p>Bio<br>Qualität</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopbutton">
+      <a href="#">zum Shop</a>
+    </div>
+  </div>
+
+  <!-- DAS STECKT DRIN ENDE -->
+  <!-- KOMM VORBEI START -->
+
+  <div class="kommVorbei">
+    <h2> Komm vorbei </h2>
+
+    <div class="anfahrtResponsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.855880722406!2d10.119826751627297!3d54.34185538010262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1643384000475!5m2!1sde!2sde"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- KOMM VORBEI ENDE -->
+
+  <!-- FOOTER START -->
+
+  <div class="footer">
+    <div class="mainFooterTop">
+      <img class="logo" src="../images/logoKaffeeroestereiRustica.svg" href="#" alt="Logo Kaffeerösterei Rustica Kiel">
+      <h5> Rustica </h5>
+      <h4> Café & Rösterei </h4>
+    </div>
+
+    <div class="mainFooterInfos">
+      <div class="mainFooterLeft">
+        <div class="mainFooterBesuch">
+          <p>Komm uns besuchen! </p>
+          <p> Fraunhoferstr. 13, Kiel </p>
+        </div>
+        <div class="mainFooterImpressum">
+          <p>Impressum</p>
+          <p>Datenschutz</p>
+        </div>
+      </div>
+
+
+      <div class="mainFooterRight">
+        <div class="mainFooterOeffnungszeiten">
+          <p>Mo - Fr 8-18 Uhr</p>
+          <p>Sa 11-18 Uhr</p>
+        </div>
+        <div class="mainFooterDropdown">
+          <p>Café</p>
+          <p>Shop</p>
+          <p>Herkunft</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER ENDE -->
+</body>
+
+</html>

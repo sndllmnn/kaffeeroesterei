@@ -1,0 +1,230 @@
+ /* NAVIGATION BAR  */
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 90vw;
+}
+
+
+.navKategorien {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-decoration: none;
+  padding:;
+  margin:0;
+  width: 100vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+  
+ 
+  /* LINKS */
+
+  /* alle Links werden beim mit-Tab-Fokussieren hervorgehoben */
+  a:focus {
+    background-color: #FFFFFF;
+    color: #3A3734;
+    text-decoration: underline;
+    outline: none;
+  }
+
+  a {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+
+  /* SCHRIFT */
+
+  h1 {
+    font-size: 96px;
+    font-weight: 900;
+    color: white;
+  }
+
+  h2 {
+    font-size: 2.4em;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+
+  h4 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: white;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: normal;
+    color: black;
+  }
+
+  /* SHOP BUTTON */
+
+  .shopbutton {
+    background-color: #191919;
+    border-radius: 5px;
+    border: 2px solid #191919;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    margin: 5% auto 0 auto;
+  }
+
+  /* Shop Button Design verändert sich*/
+  .shopbutton:hover {
+    background-color: #3A3734;
+  }
+
+  .shopbutton:active {
+    background-color: #D7BE9D;
+    position: relative;
+    top: 1px;
+  } 
+
+  /* MEDIA QUERIES */
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media screen and (min-width: 576px) {
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p,
+    a,
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    .logo {
+      width: 40px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+
+    p {
+      font-size: 1.5rem;
+    }
+
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 3em;
+    }
+
+    h4,
+    a {
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 3rem;
+    }
+
+    .logo {
+      width: 50px;
+      margin:0;
+    }
+
+    .shopbutton {
+      width: 20vw;
+      }   
+      
+      .shopbutton a {
+        font-size: 1.5rem;
+      }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+
+    .burgerMenu {
+      display: none;
+    }
+
+    .navKategorien {
+      display: inline-flex;
+      width: 40vw;
+      justify-content: space-between;
+    }
+
+    .navKategorien a {
+      font-size: 1.5rem;
+    }
+
+    .warenkorbIcon {
+      width: 30px;
+    }
+
+    .shopbutton {
+      width: 30%;
+      margin: 10% auto 0 auto;
+    }
+
+    .shopbutton a {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 4rem;
+  }
+
+  nav {
+    width: 95vw;
+  }
+  }
+
+  /* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) { 
+  .logo {
+    width: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  .shopbutton a {
+    font-size: 2.5rem;
+  }
+}
