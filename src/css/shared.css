@@ -39,15 +39,24 @@ body {
   a:focus {
     background-color: #FFFFFF;
     color: #3A3734;
-    text-decoration: underline;
     outline: none;
   }
 
   a {
     color: white;
     font-weight: lighter;
+    outline: none;
     text-decoration: none;
   }
+
+  a:hover {
+    font-weight: bolder;
+  }
+
+  a:visited {
+      text-decoration: none;
+      background-color: transparent;
+    }
 
   /* SCHRIFT */
 
@@ -103,11 +112,13 @@ body {
     background-color: #3A3734;
   }
 
-  .shopbutton:active {
-    background-color: #D7BE9D;
+  .shopbutton a:active {
     position: relative;
     top: 1px;
-  } 
+    text-decoration: none;
+    background-color:#3A3734;
+    color:white;
+  }
 
   /* MEDIA QUERIES */
 

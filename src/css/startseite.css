@@ -23,6 +23,12 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .burgerMenu {
+    width: 2rem;
+    user-select: none;
+  cursor: pointer;
+  }
   
   .header h1 {
     font-size: 3em;
@@ -40,10 +46,7 @@
       font-size: 5em;
       margin-top: 0;
     }
-  
-    .burgerMenu {
-      width: 2rem;
-    }
+
   
     .header__content {
       padding-top: 5vw;
@@ -495,17 +498,14 @@ body {
   
   
     .mehrButton {
-      cursor: pointer;
       flex-direction: column;
       padding: 7% 20%;
       text-decoration: none;
       text-shadow: 0px 0px 0px #2f6627;
     }
+
   
-    .mehrButton:hover {
-      background-color:#191919;
-    }
-    .mehrButton:active {
+    .mehrButton a:active {
       position:relative;
       top:1px;
     }
