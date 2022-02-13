@@ -1,5 +1,16 @@
  /* NAVIGATION BAR  */
-nav {
+ .header {
+  background-attachment: scroll;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vw;
+  color: white;
+  padding: 5%;
+}
+
+ nav {
   display: inline-flex;
   justify-content: space-between;
   background-color: transparent;
