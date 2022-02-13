@@ -1,0 +1,10 @@
+.roesterei__header {
+    background-image: url("../../images/cafeRusticaVonInnenGross.png");
+}
+
+.img--kaffeemaschine {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5%;
+  }
+
