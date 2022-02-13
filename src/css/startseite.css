@@ -1,16 +1,5 @@
 /* // HEADER */
-.header {
-    background-attachment: scroll;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vw;
-    color: white;
-    padding: 5%;
-  }
-
-  .startseite--header {
+  .startseite__header {
     background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
   }
 
@@ -183,7 +172,7 @@
     margin-bottom: 5%;
   }
  
-  .startseite__heading--schwarz {
+  .heading--schwarz {
     margin-top: 0;
   }
  

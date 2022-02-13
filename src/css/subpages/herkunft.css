@@ -1,0 +1,10 @@
+.herkunft__header {
+    background-image: url("../../images/kaffeebohnenGeerntet.png");
+  }
+
+  .img--anbaugebiete {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5%;
+  }
+
