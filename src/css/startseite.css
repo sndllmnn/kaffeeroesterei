@@ -1,4 +1,4 @@
-/* // HEADER */
+/* || HEADER */
   .startseite__header {
     background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
   }
@@ -141,7 +141,7 @@
     }
   }
 
-  /* // RÖSTEREI & CAFÉ */
+  /* || RÖSTEREI & CAFÉ */
 
   .startseite__roesterei {
     display: flex;
@@ -269,8 +269,49 @@
  
   }
 
-  /* // KAFFEESORTEN ENTDECKEN */
+  /* || KAFFEESORTEN ENTDECKEN */
+
+  .startseite__kaffeesorten {
+    display: none;
+  }
+
+
+/* BUTTON: ALLE PRODUKTE */
+/* || SHOP-BUTTON*/
+
+.produkteButton {
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 10%;
+    margin: 5% auto 15% auto;
+    padding: 7% 10%;
+    text-align: center;
+    text-shadow: 0px 0px 0px #2f6627;
+    width: 25%;
+}
+
+.produkteButton a {
+    margin: auto;
+    font-weight: 300;
+}
+
+.produkteButton:hover {
+    background-color: #191919;
+}
+
+.produkteButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) { 
+
   .startseite__kaffeesorten{
+    display: flex;
+    flex-direction: column;
     padding:5%;
 }
 
@@ -297,8 +338,8 @@
     justify-content: left;
     margin-bottom: 5%;
     padding:0;
-    width: 45%;
-}
+    width: 50%;
+} 
 
 
 /* Hintergrundbild */
@@ -334,39 +375,6 @@ body {
     padding: 2% 0;
 }
 
-/* BUTTON: ALLE PRODUKTE */
-/* || SHOP-BUTTON*/
-
-.produkteButton {
-    border-radius: 5px;
-    border: 2px solid white;
-    cursor: pointer;
-    font-size: 100%;
-    line-height: 10%;
-    margin: 5% auto 15% auto;
-    padding: 7% 10%;
-    text-align: center;
-    text-shadow: 0px 0px 0px #2f6627;
-    width: 25%;
-}
-
-.produkteButton a {
-    margin: auto;
-    font-weight: 300;
-}
-
-.produkteButton:hover {
-    background-color: #191919;
-}
-
-.produkteButton:active {
-    position: relative;
-    top: 1px;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) { 
-
     .img--kaffeepackung {
         width: 200px;
     }
@@ -380,9 +388,6 @@ body {
         width: 500px;
         }
 
-        .shopkachel {
-            width: 50%;
-        }
 }
 
 /* Medium devices (tablets, 768px and up) */
