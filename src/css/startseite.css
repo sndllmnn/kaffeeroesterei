@@ -1,773 +1,753 @@
 /* || HEADER */
-  .startseite__header {
-    background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
+.startseite__header {
+  background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.header__content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burgerMenu {
+  width: 2rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.header h4 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .header h1 {
+    font-size: 5em;
+    margin-top: 0;
   }
 
-  
+  .header__content {
+    padding-top: 5vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 6rem;
+  }
+
+  .header h4 {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    height: 65vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .header {
+    background-image: url("../../images/kaffeetassen_roesterei_rustica_desktop.png");
+    height: 65vw;
+  }
+
+  .header__content {
+    padding-top: 100px;
+  }
+
+  .header h1 {
+    font-size: 5.5rem;
+  }
+
+  .header h4 {
+    font-size: 2.5rem;
+    margin-bottom: 5vw;
+  }
+
+  .navKategorien a:active {
+    background-color: #d7be9d;
+    position: relative;
+    top: 1px;
+  }
+
+  .shopbutton {
+    margin-top: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 3%;
+  }
+  .header__content h1 {
+    font-size: 7rem;
+  }
+
+  .navKategorien a {
+    font-size: 2rem;
+  }
+}
+
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+  .navKategorien a {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    height: 65vw;
+  }
+
+  .warenkorbIcon {
+    width: 3rem;
+  }
+
   .header__content {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
   }
-  
-  .header__content__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .burgerMenu {
-    width: 2rem;
-    user-select: none;
-  cursor: pointer;
-  }
-  
   .header h1 {
-    font-size: 3em;
-    margin-bottom: 0;
+    font-size: 9rem;
   }
-  
+
   .header h4 {
-    font-size: 1.2rem;
-    margin-top: 0;
+    font-size: 4rem;
   }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media screen and (min-width: 576px) {
-    .header h1 {
-      font-size: 5em;
-      margin-top: 0;
-    }
+}
 
-  
-    .header__content {
-      padding-top: 5vw;
-    }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-  
-    .header h1 {
-      font-size: 6rem;
-    }
-  
-    .header h4 {
-      font-size: 1.5rem;
-    }
-  
-    .header {
-      height: 65vw;
-    }
-  
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
-    .header {
-      background-image: url("../../images/kaffeetassen_roesterei_rustica_desktop.png");
-      height: 65vw;
-    }
-  
-    .header__content {
-      padding-top: 100px;
-    }
-  
-    .header h1 {
-      font-size: 5.5rem;
-    }
-  
-    .header h4 {
-      font-size: 2.5rem;
-      margin-bottom: 5vw;
-    }
-  
-    .navKategorien a:active {
-      background-color: #D7BE9D;
-      position: relative;
-      top: 1px;
-    }
-  
-    .shopbutton {
-      margin-top: 2rem;
-    }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media screen and (min-width: 1200px) {
-  
-  .header {
-    padding: 3%;
-  }
-    .header__content h1 {
-      font-size: 7rem;
-    }
-  
-    .navKategorien a {
-      font-size: 2rem;
-    }
-  
-  }
-  
-  /* Very large desktop devices (1920px and up) */
-  @media screen and (min-width: 1920px) {
-  
-    .navKategorien a {
-      font-size: 2.5rem;
-    }
-  
-    .header {
-      height: 65vw;
-    }
-  
-    .warenkorbIcon {
-      width: 3rem;
-    }
-  
-    .header__content {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-    }
-  
-    .header h1 {
-      font-size: 9rem;
-    }
-  
-    .header h4 {
-      font-size: 4rem;
-    }
+/* || RÖSTEREI & CAFÉ */
+
+.startseite__roesterei {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+  padding: 5%;
+}
+
+.startseite__roesterei h2 {
+  color: black;
+}
+
+.startseite__roesterei p {
+  color: black;
+}
+
+.roesterei__infotext__visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.img--innenraum {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 5%;
+}
+
+.heading--schwarz {
+  margin-top: 0;
+}
+
+.img--kaffeepflanze {
+  display: flex;
+  justify-content: left;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .roesterei__infotext__visit {
+    width: 80vw;
   }
 
-  /* || RÖSTEREI & CAFÉ */
-
-  .startseite__roesterei {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: white;
-    padding: 5%;
+  .startseite__roesterei img {
+    width: 55vw;
   }
- 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
   .startseite__roesterei h2 {
-    color: black;
+    font-size: 3.5rem;
   }
- 
-  .startseite__roesterei p {
-    color: black;
+
+  .startseite__roesterei__cafe {
+    justify-content: space-between;
   }
- 
+
   .roesterei__infotext__visit {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90vw;
+    width: 43vw;
   }
- 
+
+  .startseite__roesterei img {
+    width: 40vw;
+  }
+
+  .startseite__roesterei p {
+    font-size: 1.3rem;
+  }
+
+  .startseite__roesterei__cafe__text {
+    width: 50%;
+  }
+
+  .bioFair__text {
+    width: 50vw;
+    margin-left: 5%;
+  }
+
+  .startseite__roesterei__cafe {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .roesterei__bioFair {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .startseite__roesterei img {
+    width: 40vw;
+  }
+
+  .startseite__roesterei p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+  .startseite__roesterei p {
+    font-size: 2.8rem;
+  }
+
   .img--innenraum {
-    display: flex;
-    justify-content: right;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
- 
-  .heading--schwarz {
-    margin-top: 0;
-  }
- 
-  .img--kaffeepflanze {
-    display: flex;
-    justify-content: left;
-  }
- 
-  /* Small devices (landscape phones, 576px and up) */
-  @media screen and (min-width: 576px) {
- .roesterei__infotext__visit {
-   width: 80vw;
- }
- 
-    .startseite__roesterei img {
-      width: 55vw;
-    }
-  }
- 
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
+}
 
-    .startseite__roesterei h2 {
-      font-size: 3.5rem;
-    }
+/* || KAFFEESORTEN ENTDECKEN */
 
-    .startseite__roesterei__cafe {
-      justify-content: space-between;
-    }
- 
-    .roesterei__infotext__visit {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 43vw;
-    }
- 
-    .startseite__roesterei img {
-      width: 40vw;
-    }
- 
-    .startseite__roesterei p {
-      font-size: 1.3rem;
-    }
-    
-    .startseite__roesterei__cafe__text {
-     width: 50%;
-   }
+.startseite__kaffeesorten {
+  display: none;
+}
 
-     .bioFair__text {
-      width: 50vw;
-      margin-left:5%;
-    }
- 
- 
-    .startseite__roesterei__cafe {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 1rem;
-    }
- 
-    .roesterei__bioFair {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-  }
- 
- 
- 
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media screen and (min-width: 1200px) {
- 
-   .startseite__roesterei img {
-     width: 40vw;
-   }
-
- 
-    .startseite__roesterei p {
-      font-size: 1.6rem;
-    }
- 
-  }
- 
-  /* Very large desktop devices (1920px and up) */
-  @media screen and (min-width: 1920px) {
-    .startseite__roesterei p {
-      font-size: 2.8rem;
-    }
- 
-    .img--innenraum {
-      margin-bottom: 2%;
-    }
- 
-  }
-
-  /* || KAFFEESORTEN ENTDECKEN */
-
-  .startseite__kaffeesorten {
-    display: none;
-  }
-
+.startseite__heading--weiss {
+  color: white;
+  padding: 0 5%;
+}
 
 /* BUTTON: ALLE PRODUKTE */
 /* || SHOP-BUTTON*/
 
 .produkteButton {
-    border-radius: 5px;
-    border: 2px solid white;
-    cursor: pointer;
-    font-size: 100%;
-    line-height: 10%;
-    margin: 5% auto 15% auto;
-    padding: 7% 10%;
-    text-align: center;
-    text-shadow: 0px 0px 0px #2f6627;
-    width: 25%;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 10%;
+  margin: 5% auto 15% auto;
+  padding: 7% 10%;
+  text-align: center;
+  text-shadow: 0px 0px 0px #2f6627;
+  width: 30vw;
 }
 
 .produkteButton a {
-    margin: auto;
-    font-weight: 300;
+  margin: auto;
+  font-weight: 300;
 }
 
 .produkteButton:hover {
-    background-color: #191919;
+  background-color: #191919;
 }
 
 .produkteButton:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) { 
-
+@media screen and (min-width: 576px) {
   .starteseite__kaffeesorten-slideshow {
     display: none;
   }
 
-  .startseite__kaffeesorten{
+  .startseite__kaffeesorten {
     display: flex;
     flex-direction: column;
-    padding:5%;
-}
-.startseite__kaffeesorten h2 {
+    padding: 5%;
+  }
+  .startseite__kaffeesorten h2 {
     color: white;
     margin: 0 0 5% 0;
-}
+  }
 
-
-.kaffeesorten_shopvorschau {
+  .kaffeesorten_shopvorschau {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0;
-    margin:auto;
+    padding: 0;
+    margin: auto;
+  }
 
-}
-
-.shopkachel {
+  .shopkachel {
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-bottom: 5%;
-    padding:0;
+    padding: 0;
     width: 50%;
-} 
+  }
 
-
-/* Hintergrundbild */
-body {
+  /* Hintergrundbild */
+  body {
     background-color: black;
-}
+  }
 
-.img--kaffeepackung {
+  .img--kaffeepackung {
     background-color: white;
     margin-bottom: 0.3rem;
-}
+  }
 
-/* BILDER + BILDUNTERSCHRIFTEN */
+  /* BILDER + BILDUNTERSCHRIFTEN */
 
-.kaffeepreis {
+  .kaffeepreis {
     color: #737373;
-    margin:0;
-}
+    margin: 0;
+  }
 
-.costaRica {
+  .costaRica {
     color: white;
-    margin:0;
-}
+    margin: 0;
+  }
 
-/* ICONS */
+  /* ICONS */
 
-
-.icon {
+  .icon {
     width: 10%;
-}
+  }
 
-.icons {
+  .icons {
     padding: 2% 0;
-}
+  }
 
-    .img--kaffeepackung {
-        width: 200px;
-    }
+  .img--kaffeepackung {
+    width: 200px;
+  }
 
-    .kaffeesorten_shopvorschau {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-        width: 500px;
-        }
-
+  .kaffeesorten_shopvorschau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 500px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
+
+.starteseite__kaffeesorten-slideshow {
+  display: none;
+}
 @media screen and (min-width: 768px) {
-    .img--kaffeepackung {
-        width: 300px;
-    }
-
-    .kaffeesorten_shopvorschau {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-        width: 700px;
-        }
-
-
-    .kaffeepreis {
-        font-size: 1.8rem;
-    }
-
-    .costaRica {
-        font-size: 1.8rem;
-    }
+  .img--kaffeepackung {
+    width: 300px;
   }
 
-  /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) { 
-    .img--kaffeepackung {
-        width: 200px;
-    }
-    .kaffeesorten_shopvorschau {
-        margin:0;
-        flex-wrap:nowrap;
-        width: 100vw;
-    }
+  .kaffeesorten_shopvorschau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 700px;
+  }
 
+  .kaffeepreis {
+    font-size: 1.8rem;
+  }
 
-.produkteButton {
+  .costaRica {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .starteseite__kaffeesorten-slideshow {
+    display: none;
+  }
+  .img--kaffeepackung {
+    width: 200px;
+  }
+  .kaffeesorten_shopvorschau {
+    margin: 0;
+    flex-wrap: nowrap;
+    width: 100vw;
+  }
+
+  .produkteButton {
     margin: 2rem auto 3rem auto;
     padding: 3%;
-}
+  }
 
-.produkteButton a {
+  .produkteButton a {
     font-size: 1.5rem;
-}
+  }
 }
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
+  .starteseite__kaffeesorten-slideshow {
+    display: none;
+  }
 
-    .img--kaffeepackung {
-        width: 22vw;
-        margin-bottom: 1rem;
-    }
+  .img--kaffeepackung {
+    width: 22vw;
+    margin-bottom: 1rem;
+  }
 
-    .shopkachel p {
-        font-size: 2.2rem;
-    } 
+  .shopkachel p {
+    font-size: 2.2rem;
+  }
 
-    .icons * {
-        margin-right:1rem;
-    }
-    
-    .produkteButton {
-        margin: 2rem auto 3rem auto;
-        padding: 3%;
-    }
-    
-    .produkteButton a {
-        font-size: 2.5rem;
-    }
-    }
-    
-/* // HERKUNFT */ 
+  .icons * {
+    margin-right: 1rem;
+  }
+
+  .produkteButton {
+    margin: 2rem auto 3rem auto;
+    padding: 3%;
+  }
+
+  .produkteButton a {
+    font-size: 2.5rem;
+  }
+}
+
+/* // HERKUNFT */
 .herkunft {
-    background-attachment: scroll;
-    background-color: black;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/kaffeesaecke.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 332px;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding:0;
-  }
-  
-  .herkunft * {
-    margin-top: 0;
-  }
-  
-  .herkunft h3 {
-      color: white;
-  }
-  
-  .herkunft p {
-      color: white;
-  }
-  
-  
-    .mehrButton {
-      flex-direction: column;
-      padding: 7% 20%;
-      text-decoration: none;
-      text-shadow: 0px 0px 0px #2f6627;
-    }
-
-  
-    .mehrButton a:active {
-      position:relative;
-      top:1px;
-    }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media screen and (min-width: 576px) {
-    .herkunft {
-    height: 430px;
-  }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .herkunft {
-      height: 550px;
-    }
-    .herkunft p {
-      margin: 0 5%;
-      font-size: 1.9rem;
-    }
-    }
-  
-  /* Very large desktop devices (1920px and up) */
-  @media screen and (min-width: 1920px) { 
-  
-    .herkunft h3 {
-      font-size: 4rem;
-      margin: 5% auto 2% auto;
-    }
-  
-    .herkunft {
-      height: 650px;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/kaffeesaecke.png");
-  
-    }
-    .herkunft p {
-      margin: 0 5%;
-      font-size: 3rem;
-    }
-  
-    .mehrButton {
-      margin-top:0;
-      padding:5%;
-    }
-  
-    .mehrButton a {
-      font-size: 2.5rem;
-    }
-  } 
-  
-  /* // DAS STECKT DRIN */ 
-  .dasStecktDrin {
-    padding: 5% 0;
+  background-attachment: scroll;
+  background-color: black;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../images/kaffeesaecke.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 332px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
 }
 
-.dasStecktDrin h2 {
-    text-align: center;
-    margin:0 auto 5% auto;
+.herkunft * {
+  margin-top: 0;
 }
 
-.dasStecktDrinInhalt {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom:10%;
+.herkunft h3 {
+  color: white;
 }
 
-.dasStecktDrin p {
-    text-align: center;
+.herkunft p {
+  color: white;
 }
 
-.dasStecktDrin {
-    background-color: white;
+.mehrButton {
+  flex-direction: column;
+  padding: 7% 20%;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
 }
 
-.iconsEigenschaften {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80vw;
-    height: 100px;
+.mehrButton a:active {
+  position: relative;
+  top: 1px;
 }
-
-.iconGross {
-    width: 2.5rem;
-}
-
-
-.iconMitUntertitel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10%;
-    width: 85px;
-}
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-
-.costaRicaKaffee img {
-    width: 60vw;
+  .herkunft {
+    height: 430px;
+  }
 }
-
-.dasStecktDrinInhalt {
-    display: flex;
-    flex-direction: column;
-}
-
-
-    .iconGross {
-        width: 3rem;
-    }
-}
-
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .herkunft {
+    height: 550px;
+  }
+  .herkunft p {
+    margin: 0 5%;
+    font-size: 1.9rem;
+  }
+}
 
-    .dasStecktDrin h2 {
-        margin-top:0;
-    }
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+  .herkunft h3 {
+    font-size: 4rem;
+    margin: 5% auto 2% auto;
+  }
 
-    .dasStecktDrinInhalt {
-        margin-bottom:15%;
-    }
+  .herkunft {
+    height: 650px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../../images/kaffeesaecke.png");
+  }
+  .herkunft p {
+    margin: 0 5%;
+    font-size: 3rem;
+  }
 
+  .mehrButton {
+    margin-top: 0;
+    padding: 5%;
+  }
 
-    .dasStecktDrin img {
-        margin-bottom:2rem;
-    }
+  .mehrButton a {
+    font-size: 2.5rem;
+  }
+}
 
-    .iconGross {
-        width: 5rem;
-    }
+/* // DAS STECKT DRIN */
+.dasStecktDrin {
+  padding: 5% 0;
+}
+
+.dasStecktDrin h2 {
+  text-align: center;
+  margin: 0 auto 5% auto;
+}
+
+.dasStecktDrinInhalt {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.dasStecktDrin p {
+  text-align: center;
+}
+
+.dasStecktDrin {
+  background-color: white;
+}
+
+.iconsEigenschaften {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  height: 100px;
+}
+
+.iconGross {
+  width: 2.5rem;
+}
+
+.iconMitUntertitel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 85px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .costaRicaKaffee img {
+    width: 60vw;
+  }
+
+  .dasStecktDrinInhalt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconGross {
+    width: 3rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .dasStecktDrin h2 {
+    margin-top: 0;
+  }
+
+  .dasStecktDrinInhalt {
+    margin-bottom: 15%;
+  }
+
+  .dasStecktDrin img {
+    margin-bottom: 2rem;
+  }
+
+  .iconGross {
+    width: 5rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
+  .dasStecktDrin h2 {
+    font-size: 4.5rem;
+  }
 
-    .dasStecktDrin h2 {
-        font-size: 4.5rem;
-    }
+  .iconMitUntertitel {
+    flex-direction: row;
+    display: inline-flex;
+    width: 300px;
+  }
 
-    .iconMitUntertitel {
-        flex-direction: row;
-        display: inline-flex;
-        width: 300px;
-        }
+  .dasStecktDrinInhalt {
+    margin: 3rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
 
-    .dasStecktDrinInhalt {
-        margin: 3rem auto;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-    }
+  .iconsEigenschaften {
+    flex-direction: column;
+    height: 500px;
+  }
 
-    .iconsEigenschaften {
-        flex-direction: column;
-        height: 500px;
-    }
+  .costaRicaKaffee img {
+    width: 500px;
+    margin: 0;
+  }
 
-    .costaRicaKaffee img {
-        width: 500px;
-        margin: 0;
-    }
+  .dasStecktDrin p {
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 2rem;
+  }
 
-    .dasStecktDrin p {
-        text-align: left;
-        margin-left: 3rem;
-        font-size: 2rem;
-    }
-
-    .dasStecktDrin a {
-        margin-top: 0;
-    }
+  .dasStecktDrin a {
+    margin-top: 0;
+  }
 }
-
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
+  .iconMitUntertitel {
+    width: 600px;
+  }
 
-    .iconMitUntertitel {
-        width: 600px;
-        }
+  .dasStecktDrin h2 {
+    font-size: 6rem;
+    margin-top: 0;
+  }
 
-    .dasStecktDrin h2 {
-        font-size: 6rem;
-        margin-top:0;
-    }
+  .costaRicaKaffee img {
+    width: 40vw;
+  }
 
-    .costaRicaKaffee img {
-        width: 40vw;
-    }
+  .dasStecktDrin p {
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+  }
 
+  .iconsEigenschaften {
+    height: 711px;
+    width: 400px;
+  }
 
-    .dasStecktDrin p {
-        text-align: left;
-        margin-left: 1.5rem;
-        font-size: 2.5rem;
-    }
-
-    .iconsEigenschaften {
-        height: 711px;
-        width: 400px;
-    }
- 
-    .dasStecktDrinInhalt {
-        justify-content: center;
-    } 
+  .dasStecktDrinInhalt {
+    justify-content: center;
+  }
 }
 
-/* // KOMM VORBEI */ 
+/* // KOMM VORBEI */
 
 .kommVorbei {
-    background-color: white;
-    background-attachment: scroll;
-    height: 300px;
-    padding: 5% 0 0 0;
+  background-color: white;
+  background-attachment: scroll;
+  height: 300px;
+  padding: 5% 0 0 0;
 }
 
 .anfahrtResponsive {
-    overflow: hidden;
-    padding-bottom: 56%;
-    position: relative;
-    }
-    
-    .anfahrtResponsive iframe {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    }
+  overflow: hidden;
+  padding-bottom: 56%;
+  position: relative;
+}
+
+.anfahrtResponsive iframe {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
 
 .kommVorbei h2 {
-    color: black;
-    font-weight: 900;
-    margin:0 0 20px 5%;
-
+  color: black;
+  font-weight: 900;
+  margin: 0 0 20px 5%;
 }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) { 
-
-    .kommVorbei h2 {
-        margin-bottom: 2%;
-    }
+@media screen and (min-width: 992px) {
+  .kommVorbei h2 {
+    margin-bottom: 2%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) { 
-    .kommVorbei {
+@media screen and (min-width: 1200px) {
+  .kommVorbei {
     margin-bottom: 17%;
-}
+  }
 }
 
 /* Very large desktop devices (1920px and up) */
-@media screen and (min-width: 1920px) { 
-    
-} 
-
-
-
+@media screen and (min-width: 1920px) {
+}
