@@ -16,11 +16,11 @@ const arrowPrev = document.querySelector(".arrow-prev");
 var currentSlide = 0;
 var currentDot = 0;
 
-function nextSlide(number) {
+function nextSlide() {
   slides[currentSlide].classList.remove("active");
   slideshowDots[currentDot].classList.remove("active");
 
-  var newCurrentSlide = currentSlide + 1;
+  var newCurrentSlide = 1 + currentSlide;
   var newCurrentDot = currentDot + 1;
 
   if (newCurrentSlide > 3) {

@@ -146,6 +146,7 @@
 
 .startseite__roesterei h2 {
   color: black;
+  padding:0;
 }
 
 .startseite__roesterei p {
@@ -265,6 +266,7 @@
   padding: 0 5%;
 }
 
+
 /* BUTTON: ALLE PRODUKTE */
 /* || SHOP-BUTTON*/
 
@@ -278,7 +280,7 @@
   padding: 7% 10%;
   text-align: center;
   text-shadow: 0px 0px 0px #2f6627;
-  width: 30vw;
+  width: 25%;
 }
 
 .produkteButton a {
