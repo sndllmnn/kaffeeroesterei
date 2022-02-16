@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-{{> head }}
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaffeeroesterei Rustica</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Poppins:wght@100;400&family=Readex+Pro:wght@200;300;600&display=swap" rel="stylesheet">
+  <script src="js/index.js" defer></script>
+ <script src="js/slideshow.js" defer></script>
+  </head>
 
 <body>
   <!-- || HEADER ANFANG -->
@@ -29,7 +43,7 @@
           serviert im gemütlichen Café in der
           Innenstadt.</p>
 
-        <div class="roesterei__infotext__visit">
+        <div class="roesterei__infotext__visit infotext__visit">
           <p class="roesterei__infotext">Komm uns besuchen! <br> Fraunhoferstr. 13, Kiel </p>
           <p class="roesterei__infotext"> Mo – Fr 8–18 Uhr <br> Sa 11–18 Uhr </p>
         </div>
@@ -64,7 +78,7 @@
 
   <h2 class="heading--weiss slideshow__heading"> Entdecke unsere Kaffeesorten </h2>
   <div class="starteseite__kaffeesorten-slideshow">
-    <div class="slide">
+    <div class="slide slide1">
       <img
         class="slide-bild"
         src="images/slideshowImages/kaffeepackungCostaRica1.png"
@@ -142,9 +156,6 @@
       <a href="#">alle Produkte</a>
     </div> 
   </div>
-  
-
-
 
   <!-- SLIDESHOW ENDE -->
 
@@ -222,43 +233,9 @@
 
   <!-- KOMM VORBEI ENDE -->
 
-  <!-- || FOOTER START -->
 
-  <div class="footer">
-    <div class="mainFooterTop">
-      <img class="logo" src="../images/logoKaffeeroestereiRustica.svg" href="#" alt="Logo Kaffeerösterei Rustica Kiel">
-      <h5> Rustica </h5>
-      <h4> Café & Rösterei </h4>
-    </div>
+  {{>footer}}
 
-    <div class="mainFooterInfos">
-      <div class="mainFooterLeft">
-        <div class="mainFooterBesuch">
-          <p>Komm uns besuchen! </p>
-          <p> Fraunhoferstr. 13, Kiel </p>
-        </div>
-        <div class="mainFooterImpressum">
-          <p>Impressum</p>
-          <p>Datenschutz</p>
-        </div>
-      </div>
-
-
-      <div class="mainFooterRight">
-        <div class="mainFooterOeffnungszeiten">
-          <p>Mo - Fr 8-18 Uhr</p>
-          <p>Sa 11-18 Uhr</p>
-        </div>
-        <div class="mainFooterDropdown">
-          <p>Café</p>
-          <p>Shop</p>
-          <p>Herkunft</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER ENDE -->
 </body>
 
 </html>

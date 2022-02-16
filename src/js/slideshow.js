@@ -30,6 +30,27 @@ function nextSlide() {
   if (newCurrentDot > 3) {
     newCurrentDot = 0;
   }
+// funktioniert 
+  if (newCurrentSlide === 1) {
+    slides[1].classList.add("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[3].classList.remove("slide4Active");
+
+  }
+// funktioniert noch nicht
+    if (newCurrentSlide === 2) {
+      slides[2].classList.add("slide3Active");
+      slides[1].classList.remove("slide2Active");
+      slides[3].classList.remove("slide4Active");
+    }
+
+// funktioniert noch nicht 
+      if (newCurrentSlide === 3) {
+        slides[3].classList.add("slide4Active");
+        slides[1].classList.remove("slide2Active");
+        slides[2].classList.remove("slide3Active");
+      }
+
 
   slides[newCurrentSlide].classList.add("active");
   slideshowDots[newCurrentDot].classList.add("active");

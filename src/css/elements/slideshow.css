@@ -23,6 +23,19 @@
   opacity: 1;
 }
 
+.slide2Active {
+  transform: translate(-100vw);
+}
+
+.slide3Active {
+  transform: translate(-100vw);
+}
+
+.slide3Active {
+  transform: translate(-100vw);
+
+}
+
 .slide-bild {
   padding-top: 7%;
   width: 100vw;
@@ -100,6 +113,10 @@
  .active {
   /* aktives Element soll nicht transparent sein, Klassenzuweisung wird mit JS gemacht */
   opacity: 1;
+}
+
+.starteseite__kaffeesorten--mobileOnly {
+  padding-bottom: 5%;
 }
 
 /* Small devices (landscape phones, 576px and up) */

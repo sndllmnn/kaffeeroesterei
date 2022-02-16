@@ -1,73 +1,111 @@
 <!DOCTYPE html>
-{{> head }}
-<!-- css einbindung fehlt noch -->
-<body>
-    <header>
-        <div class="header herkunft__header">
-          {{> nav }}
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaffeeroesterei Rustica</title>
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Poppins:wght@100;400&family=Readex+Pro:wght@200;300;600&display=swap"
+      rel="stylesheet"/>
+    <script src="js/index.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+  </head>
+  <body>
+    <header class="header herkunft__header">
+      {{> nav}}
+    </header>
+    <!-- // URSPRUNG -->
+    <div class="herkunftSubpage">
+      <div class="herkunft__ursprung">
+        <div class="herkunft__ursprung__text">
+          <h2 class="heading--schwarz">Der Ursprung von Rustica</h2>
+
+          <p class="ursprung__infotext">
+            Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+            Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in
+            Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+            Ein kleines Bächlein namens Duden fließt durch ihren Ort und
+            versorgt sie mit den nötigen Regelialien. Es ist ein
+            paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund
+            fliegen.Nicht einmal von der allmächtigen Interpunktion werden die
+            Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+          </p>
         </div>
-        <!-- // URSPRUNG -->
-        <div class="herkunft__ursprung">
-              <div class="herkunft__ursprung__text">
-                <h2 class="heading--schwarz"> Der Ursprung von Rustica </h2>
-        
-                <p class="ursprung__infotext">Weit hinten, hinter den Wortbergen, fern der 
-                    Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden
-                    wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen
-                    Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort
-                    und versorgt sie mit den nötigen Regelialien. Es ist ein 
-                    paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund
-                    fliegen.Nicht einmal von der allmächtigen Interpunktion werden die
-                    Blindtexte beherrscht – ein geradezu unorthographisches Leben.</p>
-                </div>
-                <div class="herkunft__ursprung__video">
-                    <iframe width="560" height="315"
-                    src="https://www.youtube-nocookie.com/embed/IGs33q65b1w"
-                    title="Herkunft Kaffee" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                    </iframe>
-                </div>
-              </div>
+        <div class="herkunft__video">
+          <video
+            controls>
+            <source
+            src="../videos/geroestete_kaffeebohnen_nahansicht.webm"
+            type="video/webm"
+          />
+          <source
+            src="../videos/geroestete_kaffeebohnen_nahansicht.mp4"
+            type="video/mp4"
+          />
+          Sorry, your browser does not support embedded videos.
+        </video>
+        </div>
+      </div>
 
-              <!-- // ANBAUGEBIETE -->
-              <div class="herkunft__anbaugebiete">
-                <div class="herkunft__anbaugebiete__text">
-                  <h2 class="heading--schwarz">Die Anbaugebiete</h2>
-          
-                  <p class="anbaugebiete__infotext">Weit hinten, hinter den Wortbergen, fern der sie in 
-                      Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen
-                      Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein
-                      kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit
-                      den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem
-                      gebratene Satzteile in den Mund fliegen.Nicht einmal von der allmächtigen
-                      Interpunktion werden die Blindtexte beherrscht – ein geradezu northographisches Leben.</p>
-                  </div>
-                 
-                  <picture class="img--anbaugebiete">
-                    <img src="images/anbaugebiete__infotext" alt="Café Rustica Kiel Kaffee Anbaugebiete">
-                  </picture>
-                </div>
+      <!-- // ANBAUGEBIETE -->
+      <div class="herkunft__anbaugebiete">
+        <div class="herkunft__anbaugebiete__text">
+          <h2 class="heading--schwarz">Die Anbaugebiete</h2>
 
-                <!-- // WOHL DER BESCHÄFTIGTEN -->
-              <div class="herkunft__menschenwohl">
-                <div class="herkunft__menschenwohl__text">
-                  <h2 class="heading--schwarz">Das Wohl der Beschäftigten auf den Kaffee-Plantagen</h2>
-          
-                  <p class="anbaugebiete__infotext">Weit hinten, hinter den Wortbergen, fern der sie in 
-                      Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen
-                      Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein
-                      kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit
-                      den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem
-                      gebratene Satzteile in den Mund fliegen.Nicht einmal von der allmächtigen
-                      Interpunktion werden die Blindtexte beherrscht – ein geradezu northographisches Leben.</p>
-                  </div>
-                 
-                  <picture class="img--plantagenBeschaeftigte">
-                    <img src="images/mitarbeiterIn_kaffeeplantage.png" alt="Eine Person, die auf einer Kaffeeplantage Kaffee erntet">
-                  </picture>
-                </div>
-                {{> footer }}
+          <p class="anbaugebiete__infotext">
+            Weit hinten, hinter den Wortbergen, fern der sie in Länder Vokalien
+            und Konsonantien leben die Blindtexte. Abgeschieden wohnen
+            Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+            Ein kleines Bächlein namens Duden fließt durch ihren Ort und
+            versorgt sie mit den nötigen Regelialien. Es ist ein
+            paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund
+            fliegen.Nicht einmal von der allmächtigen Interpunktion werden die
+            Blindtexte beherrscht – ein geradezu northographisches Leben.
+          </p>
+        </div>
 
-        
-</body>
+        <picture class="img--anbaugebiete">
+          <img
+            src="../images/anbaugebiete_kaffee.png"
+            alt="Café Rustica Kiel Kaffee Anbaugebiete"
+          />
+        </picture>
+      </div>
+
+      <!-- // WOHL DER BESCHÄFTIGTEN -->
+      <div class="herkunft__menschenwohl">
+        <div class="herkunft__menschenwohl__text">
+          <h2 class="heading--schwarz">
+            Das Wohl der Beschäftigten auf den Kaffee-Plantagen
+          </h2>
+
+          <p class="anbaugebiete__infotext">
+            Weit hinten, hinter den Wortbergen, fern der sie in Länder Vokalien
+            und Konsonantien leben die Blindtexte. Abgeschieden wohnen
+            Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+            Ein kleines Bächlein namens Duden fließt durch ihren Ort und
+            versorgt sie mit den nötigen Regelialien. Es ist ein
+            paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund
+            fliegen.Nicht einmal von der allmächtigen Interpunktion werden die
+            Blindtexte beherrscht – ein geradezu northographisches Leben.
+          </p>
+        </div>
+
+        <picture class="img--plantagenBeschaeftigte">
+          <img
+            src="../images/mitarbeiterIn_kaffeeplantage.png"
+            alt="Eine Person, die auf einer Kaffeeplantage Kaffee erntet"
+          />
+        </picture>
+      </div>
+    </div>
+      {{>footer}}
+  
+  </body>
+</html>
