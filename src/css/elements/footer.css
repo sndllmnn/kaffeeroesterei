@@ -1,100 +1,130 @@
 .footer {
-    background-color: black;
-    padding:5%;
+  background-color: black;
+  padding: 5%;
 }
 
 .footer div {
-    padding: 0;
+  padding: 0;
 }
-
 
 .footer * {
-    color: white;
+  color: white;
 }
 
-
 .footer h5 {
-    margin-top: 1%;
-    margin-bottom: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .footer h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 
 .footer p {
-    font-weight: lighter;
-    margin-bottom: 0;
-    margin-top: 1%;
-    color: white;
+  font-weight: lighter;
+  margin-bottom: 0;
+  margin-top: 1%;
+  color: white;
 }
 
-
 .FooterTop {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .FooterInfos div {
-    margin-bottom: 15%;
+  margin-bottom: 15%;
 }
 
 .FooterInfos {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-    .footer {
-        margin-top: 20vw;
-    }
+  .kommVorbei {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .footer a {
+    font-size: 19.2px;
+  }
 }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .footer {
-        margin-top: 30vw;
-    }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer a {
+    font-size: 24px;
+    margin-right: 5%;
+  }
+
+  .footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
-    .footer {
-        margin-top: 25vw;
-    }
+  .footer img {
+    width: 3.5rem;
+  }
 
-    .footer img {
-        width: 3.5rem;
-    }
+  .footer a {
+    font-size: 24px;
+    margin-right: 10%;
+
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
+
+  .footer img {
+    width: 4.5rem;
+  }
+
+  .footer h5 {
+    font-size: 4rem;
+  }
+
+  .footer h4 {
+    font-size: 3rem;
+  }
+
+  .footer p {
+    font-size: 2rem;
+  }
+
+  .footer a {
+    font-size: 2rem;
+  }
+}
+
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+
     .footer img {
-        width: 4.5rem;
-    }
+        width: 6.5rem;
+      }
 
     .footer h5 {
-        font-size: 4rem;
+        font-size: 6.5rem;
     }
 
-    .footer h4 {
-        font-size: 3rem
-    }
+  .footer h4 {
+      font-size: 5rem;
+  }
 
-    .footer {
-        margin-top: 300px;
-        margin-bottom: 0;
-    }
+  .footer p {
+  font-size: 4rem;
+  text-align: left;
+  }
 
-    .footer p {
-        font-size: 2.5rem;
-    }
-
-    .FooterInfos {
-        height: 300px;
+  .footer a {
+    font-size: 4rem;
     }
 }

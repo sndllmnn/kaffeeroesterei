@@ -305,7 +305,7 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-  .starteseite__kaffeesorten-slideshow {
+  .starteseite__kaffeesorten--mobileOnly {
     display: none;
   }
 
@@ -719,21 +719,17 @@
 .kommVorbei {
   background-color: white;
   background-attachment: scroll;
-  height: 300px;
-  padding: 5% 0 0 0;
+  height: 60vh;
+  padding: 5% 0 5%;
 }
 
 .anfahrtResponsive {
-  overflow: hidden;
-  padding-bottom: 56%;
   position: relative;
 }
 
 .anfahrtResponsive iframe {
   left: 0;
   position: absolute;
-  top: 0;
-  width: 100vw;
 }
 
 .kommVorbei h2 {
@@ -744,6 +740,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+  .kommVorbei {
+    padding-bottom:0;
+  }
   .kommVorbei h2 {
     margin-bottom: 2%;
   }
