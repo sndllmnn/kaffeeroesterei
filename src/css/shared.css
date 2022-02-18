@@ -100,34 +100,8 @@ body {
     color: black;
   }
 
-  /* SHOP BUTTON */
+  
 
-  .shopbutton {
-    background-color: #191919;
-    border-radius: 5px;
-    border: 2px solid #191919;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 3%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 30vw;
-    margin: 5% auto 0 auto;
-  }
-
-  /* Shop Button Design verändert sich*/
-  .shopbutton:hover {
-    background-color: #3A3734;
-  }
-
-  .shopbutton a:active {
-    position: relative;
-    top: 1px;
-    text-decoration: none;
-    background-color:#3A3734;
-    color:white;
-  }
 
   /* MEDIA QUERIES */
 
@@ -143,8 +117,9 @@ body {
     }
 
     p,
-    a,
-    h4 {
+    a,  
+    h4,
+li {
       font-size: 1.2rem;
     }
 
@@ -156,7 +131,8 @@ body {
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
 
-    p {
+    p,
+    li {
       font-size: 1.5rem;
     }
 
@@ -182,14 +158,6 @@ body {
       width: 50px;
       margin:0;
     }
-
-    .shopbutton {
-      width: 20vw;
-      }   
-      
-      .shopbutton a {
-        font-size: 1.5rem;
-      }
   }
 
   /* Large devices (desktops, 992px and up) */
@@ -212,15 +180,6 @@ body {
     .warenkorbIcon {
       width: 30px;
     }
-
-    .shopbutton {
-      width: 30%;
-      margin: 10% auto 0 auto;
-    }
-
-    .shopbutton a {
-      font-size: 1.5rem;
-    }
   }
 
   /* Extra large devices (large desktops, 1200px and up) */
@@ -242,9 +201,5 @@ body {
 
   h2 {
     font-size: 4.5rem;
-  }
-
-  .shopbutton a {
-    font-size: 2.5rem;
   }
 }

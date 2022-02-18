@@ -162,7 +162,7 @@
 
 .img--innenraum {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   margin-bottom: 5%;
 }
 
@@ -275,7 +275,7 @@
 /* BUTTON: ALLE PRODUKTE */
 /* || SHOP-BUTTON*/
 
-.produkteButton {
+.produktButton {
   border-radius: 5px;
   border: 2px solid white;
   cursor: pointer;
@@ -289,16 +289,16 @@
   background-color: black;
 }
 
-.produkteButton a {
+.produktButton a {
   margin: auto;
   font-weight: 300;
 }
 
-.produkteButton:hover {
+.produktButton:hover {
   background-color: #191919;
 }
 
-.produkteButton:active {
+.produktButton:active {
   position: relative;
   top: 1px;
 }
@@ -425,12 +425,12 @@
     width: 100vw;
   }
 
-  .produkteButton {
+  .produktButton {
     margin: 2rem auto 3rem auto;
     padding: 3%;
   }
 
-  .produkteButton a {
+  .produktButton a {
     font-size: 1.5rem;
   }
 }
@@ -454,12 +454,12 @@
     margin-right: 1rem;
   }
 
-  .produkteButton {
+  .produktButton {
     margin: 2rem auto 3rem auto;
     padding: 3%;
   }
 
-  .produkteButton a {
+  .produktButton a {
     font-size: 2.5rem;
   }
 }
