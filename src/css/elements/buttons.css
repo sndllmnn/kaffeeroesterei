@@ -1,144 +1,122 @@
-/* MEHR BUTTON */
-.mehrButton {
-    flex-direction: column;
-    padding: 7% 20%;
-    text-decoration: none;
-    text-shadow: 0px 0px 0px #2f6627;
-  }
-  
-  .mehrButton a:active {
-    position: relative;
-    top: 1px;
-  }
+/* || GILT FÜR ALLE BUTTONS */
 
-
-/* SHOP BUTTON + ZURÜCK-BUTTON */
-
-.shopbutton,
-.backButton {
-  background-color: #191919;
-  border-radius: 5px;
-  border: 2px solid #191919;
+.button {
   cursor: pointer;
-  text-decoration: none;
-  padding: 3%;
   display: flex;
   justify-content: center;
   align-content: center;
   width: 30vw;
-  margin: 5% auto 0 auto;
+  text-decoration: none;
 }
 
-/* Shop Button Design verändert sich*/
-.shopbutton:hover,
-.backButton:hover {
-  background-color: #3A3734;
-}
-
-.shopbutton a:active,
-.backButton a:active {
+/* ACTIVE */
+.button a:active {
   position: relative;
   top: 1px;
   text-decoration: none;
-  background-color:#3A3734;
-  color:white;
+  background-color: #3a3734;
+  color: white;
 }
 
-/* BUTTON: ALLE PRODUKTE */
+/* HOVER */
+.shopbutton:hover,
+.backButton:hover,
+.produktButton:hover {
+  background-color: #3a3734;
+}
+
+/* || GILT NICHT FÜR ALLE BUTTONS GLEICH */
+
+.shopbutton,
+.backButton,
 .produktButton {
-    border-radius: 5px;
-    border: 2px solid white;
-    cursor: pointer;
-    font-size: 100%;
-    line-height: 10%;
-    margin: 5% auto 5% auto;
-    padding: 7% 10%;
-    text-align: center;
-    text-shadow: 0px 0px 0px #2f6627;
-    width: 25%;
-    background-color: black;
+  background-color: #191919;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #191919;
+  margin: 5% auto 0 auto;
+}
+
+.shopbutton,
+.backButton {
+  padding: 3%;
+}
+
+
+
+/* || MEHR-BUTTON */
+.mehrButton {
+  flex-direction: column;
+  padding: 7% 20%;
+  text-shadow: 0px 0px 0px #2f6627;
+}
+
+/* || PRODUKT-BUTTON */
+.produktButton {
+  border-color: white;
+  line-height: 10%;
+  padding: 7% 10%;
+}
+
+
+/* || Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .shopbutton a {
+    font-size: 1.5rem;
   }
-  
+
+  .shopbutton {
+    width: 20vw;
+  }
+}
+
+/* || Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .shopbutton {
+    margin-top: 2rem;
+  }
+  .produktButton {
+    margin: 2rem auto 3rem auto;
+    padding: 3%;
+  }
+
   .produktButton a {
-    margin: auto;
-    font-weight: 300;
-  }
-  
-  .produktButton:hover {
-    background-color: #191919;
-  }
-  
-  .produktButton:active {
-    position: relative;
-    top: 1px;
+    font-size: 1.5rem;
   }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-  
-      
-      .shopbutton a {
-        font-size: 1.5rem;
-      }
-
-      .shopbutton {
-        width: 20vw;
-        }   
+  .shopbutton {
+    width: 30%;
+    margin: 10% auto 0 auto;
   }
 
-    /* Large devices (desktops, 992px and up) */
-    @media screen and (min-width: 992px) {
-
-        .shopbutton {
-            margin-top: 2rem;
-          }
-        .produktButton {
-            margin: 2rem auto 3rem auto;
-            padding: 3%;
-          }
-        
-          .produktButton a {
-            font-size: 1.5rem;
-          }
-    
-        .shopbutton {
-          width: 30%;
-          margin: 10% auto 0 auto;
-        }
-    
-        .shopbutton a {
-          font-size: 1.5rem;
-        }
-
-        .shopbutton {
-            margin-top: 2rem;
-          }
-      }
-
-
-
-  /* Very large desktop devices (1920px and up) */
-@media screen and (min-width: 1920px) { 
-    .mehrButton {
-        margin-top: 0;
-        padding: 5%;
-      }
-    
-      .mehrButton a {
-        font-size: 2.5rem;
-      }
-    .produktButton a {
-        font-size: 2.5rem;
-      }
-      .produktButton {
-        margin: 2rem auto 3rem auto;
-        padding: 3%;
-      }
-
-
-
-    .shopbutton a {
-      font-size: 2.5rem;
-    }
+  .shopbutton a {
+    font-size: 1.5rem;
   }
-   
+
+  .shopbutton {
+    margin-top: 2rem;
+  }
+}
+
+/* || Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+  .mehrButton {
+    margin-top: 0;
+    padding: 5%;
+  }
+
+  .mehrButton a {
+    font-size: 2.5rem;
+  }
+  .produktButton a {
+    font-size: 2.5rem;
+  }
+  .produktButton {
+    margin: 2rem auto 3rem auto;
+    padding: 3%;
+  }
+
+  .shopbutton a {
+    font-size: 2.5rem;
+  }
+}
