@@ -1,0 +1,37 @@
+.cafeSubpage {
+    background-color:white;
+}
+
+.cafeSubpage {
+        padding: 5% 0;
+      }
+
+.cafeSubpage p {
+    margin: 2% 5%;
+}
+
+.img--kaffeemaschine {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+  }
+
+  .cafeSubpage img {
+    margin: 5%;
+    width: 60vw;
+  }
+
+
+.cafe__header {
+    background-image: url("../../images/cafeSitzplaetzeRusticaKiel.png");
+  }
+
+  .cafeSubpage iframe {
+    width: 100vw;
+    border:0;
+    height: 30vh;
+    margin-bottom:0;
+    
+  } 
+
+

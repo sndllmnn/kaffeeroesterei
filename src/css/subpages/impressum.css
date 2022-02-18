@@ -1,4 +1,4 @@
-.impressumDatenschutz {
+.impressumSubpage {
   padding: 5% 0;
   background-color: white;
 }
@@ -8,24 +8,24 @@
   padding: 3% 4%;
 }
 
-.impressumDatenschutz h1 {
+.impressumSubpage h1 {
   font-size: 2rem;
   color: black;
 }
 
-.impressumDatenschutz h2 {
+.impressumSubpage h2 {
   font-size: 1.5rem;
   margin: 2% 0;
 }
 
-.impressumDatenschutz p {
+.impressumSubpage p {
   padding: 0 5%;
   margin: 0;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .impressumDatenschutz h1 {
+  .impressumSubpage h1 {
     font-size: 2.5rem;
   }
 
@@ -33,18 +33,18 @@
     padding-left: 5%;
   }
 
-  .impressumDatenschutz {
+  .impressumSubpage {
     margin-bottom: 2%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  .impressumDatenschutz h1 {
+  .impressumSubpage h1 {
     font-size: 3rem;
   }
 
-  .impressumDatenschutz h2 {
+  .impressumSubpage h2 {
     font-size: 2rem;
   }
 }
@@ -52,22 +52,22 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
-    .impressumDatenschutz p {
+    .impressumSubpage p {
         text-align: left;
     }
 }
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
-    .impressumDatenschutz h1 {
+    .impressumSubpage h1 {
         font-size: 5rem;
       }
     
-      .impressumDatenschutz h2 {
+      .impressumSubpage h2 {
         font-size: 4rem;
       }
 
-      .impressumDatenschutz p, li, a {
+      .impressumSubpage p, li, a {
         font-size: 2rem;
       }
 }
