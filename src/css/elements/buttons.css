@@ -112,18 +112,13 @@
     padding: 5%;
   }
 
-  .mehrButton a {
+  .button a {
     font-size: 2.5rem;
   }
-  .produktButton a {
-    font-size: 2.5rem;
-  }
+
   .produktButton {
     margin: 2rem auto 3rem auto;
     padding: 3%;
   }
 
-  .shopbutton a {
-    font-size: 2.5rem;
-  }
 }

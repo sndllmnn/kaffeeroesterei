@@ -35,6 +35,10 @@
   margin-bottom: 15%;
 }
 
+.FooterLeft {
+  width: 45vw;
+}
+
 .FooterInfos {
   display: flex;
   justify-content: space-between;
@@ -55,6 +59,10 @@
   }
   .footer a {
     font-size: 19.2px;
+  }
+
+  .FooterLeft {
+    width: 30vw;
   }
 }
 

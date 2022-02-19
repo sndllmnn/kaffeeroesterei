@@ -33,49 +33,62 @@
   }
 
 
-
-  /* Small devices (landscape phones, 576px and up) /*
-@media screen and (min-width: 576px) {
-  .img--plantagenBeschaeftigte img {
-    padding-bottom: 2vh;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .cafeSubpage .backButton {
+    margin-top:7vh;
+  }
 }
 
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  .cafeSubpage p {
+    font-size: 2rem;
+    }
+    .cafeSubpage .backButton {
+      margin-top:9vh;
+    }
 }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-
-  .herkunftSubpage h2 {
-    margin: 0;
-    font-size: 7rem;
-    padding-top: 2%;
+  .cafe__header {
+    height: 70vh;
   }
 
+  .cafeSubpage
+  .roesterei__infotext {
+    text-align: left;
+  }
+
+  .cafeSubpage .backButton {
+    margin-top:15vh;
+  }
+}
+
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+.cafeSubpage h2 {
+  font-size: 7em;
+}
+.cafeSubpage p {
+  font-size: 3rem;
+}
+
+.cafeSubpage .backButton {
+  margin-top:20vh;
+}
+}
+ 
+
+
+/*
   .herkunftSubpage p {
   font-size: 3rem;
   }
 
-  .ursprung__infotext, .herkunftSubpage h2 {
-    text-align: left;
-  }
-
-  .herkunftSubpage video {
-    width: 60vw;
-  }
-
-  .herkunft__anbaugebiete {
-  display: flex;
-  margin:5%;
-  }
 
   .herkunft__anbaugebiete p {
     text-align: left;
@@ -108,6 +121,6 @@
    width: 35vw;
    margin:0;
  }
-} 
+} */
 
 
