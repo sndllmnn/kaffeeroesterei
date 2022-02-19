@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
-  padding: 5%;
+  padding: 10% 5%;
 }
 
 .footer div {
@@ -89,6 +89,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
   .FooterInfos {
     display: flex;
     justify-content: space-between;
@@ -96,14 +97,8 @@
     height: 15vh;
   }
 
-  .footerLeft {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
   .footer {
-    padding-top: 0;
+    padding-top: 20vh;
   }
 
   .footer img {

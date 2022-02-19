@@ -84,7 +84,6 @@
     position: relative;
     top: 1px;
   }
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -143,7 +142,7 @@
 
 .startseite__roesterei h2 {
   color: black;
-  padding:0;
+  padding: 0;
 }
 
 .startseite__roesterei p {
@@ -156,7 +155,6 @@
   justify-content: space-between;
   width: 90vw;
 }
-
 
 .img--innenraum {
   display: flex;
@@ -244,6 +242,10 @@
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
+  .roesterei__infotext--left {
+    text-align: left;
+  }
+
   .startseite__roesterei p {
     font-size: 2.8rem;
   }
@@ -268,9 +270,6 @@
 .starteseite__kaffeesorten--mobileOnly {
   background-color: black;
 }
-
-
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
@@ -355,7 +354,6 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
-
   .starteseite__kaffeesorten--mobileOnly {
     display: none;
   }
@@ -389,12 +387,27 @@
   .img--kaffeepackung {
     width: 200px;
   }
+
+  .startseite__kaffeesorten h2 {
+    padding: 0;
+  }
+
   .kaffeesorten_shopvorschau {
     margin: 0;
     flex-wrap: nowrap;
     width: 100vw;
   }
+}
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .img--kaffeepackung {
+    width: 300px;
+  }
+
+  .shopkachel p {
+    text-align: left;
+  }
 }
 
 /* Very large desktop devices (1920px and up) */
@@ -415,10 +428,9 @@
   .icons * {
     margin-right: 1rem;
   }
-
 }
 
-/* // HERKUNFT */
+/* || HERKUNFT */
 .herkunft {
   background-attachment: scroll;
   background-color: black;
@@ -454,8 +466,6 @@
   color: white;
 }
 
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   .herkunft {
@@ -472,6 +482,13 @@
     margin: 0 5%;
     font-size: 1.9rem;
   }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+.herkunft p {
+  text-align: center;
+}
 }
 
 /* Very large desktop devices (1920px and up) */
@@ -494,11 +511,9 @@
     margin: 0 5%;
     font-size: 3rem;
   }
-
-
 }
 
-/* // DAS STECKT DRIN */
+/* || DAS STECKT DRIN */
 .dasStecktDrin {
   padding: 5% 0;
 }
@@ -620,6 +635,18 @@
   }
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+.dasStecktDrinInhalt .button {
+  margin:0;
+}
+
+.dasStecktDrin {
+  padding-bottom:10%;
+}
+}
+
+
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
   .iconMitUntertitel {
@@ -651,7 +678,7 @@
   }
 }
 
-/* // KOMM VORBEI */
+/* || KOMM VORBEI */
 
 .kommVorbei {
   background-color: white;
@@ -667,7 +694,7 @@
 .kommVorbei iframe {
   left: 0;
   position: absolute;
-  height: 30vh;
+  height: 35vh;
   width: 100vw;
 }
 
@@ -679,15 +706,13 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-.kommVorbei iframe {
-  height: 40vh;
+  .kommVorbei iframe {
+    height: 40vh;
+  }
 }
-}
-
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
   .kommVorbei {
     height: 30vh;
   }
@@ -697,7 +722,7 @@
   }
 
   .kommVorbei {
-    padding-bottom:0;
+    padding-bottom: 0;
   }
   .kommVorbei h2 {
     margin-bottom: 2%;
@@ -707,10 +732,12 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
   .kommVorbei {
-    margin-bottom: 17%;
+    height: 40vh;
+  }
+
+  .kommVorbei iframe {
+    height: 40vh;
   }
 }
 
-/* Very large desktop devices (1920px and up) */
-@media screen and (min-width: 1920px) {
-}
+ 
