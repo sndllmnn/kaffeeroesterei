@@ -1,13 +1,14 @@
 .cafeSubpage {
     background-color:white;
+    padding: 5% 0;
 }
-
-.cafeSubpage {
-        padding: 5% 0;
-      }
 
 .cafeSubpage p {
     margin: 2% 5%;
+}
+
+.cafeSubpage .infotext__visit {
+  width: 100vw;
 }
 
 .img--kaffeemaschine {
@@ -29,9 +30,84 @@
   .cafeSubpage iframe {
     width: 100vw;
     border:0;
-    height: 30vh;
-    margin-bottom:0;
-    
-  } 
+  }
+
+
+
+  /* Small devices (landscape phones, 576px and up) /*
+@media screen and (min-width: 576px) {
+  .img--plantagenBeschaeftigte img {
+    padding-bottom: 2vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+  .herkunftSubpage h2 {
+    margin: 0;
+    font-size: 7rem;
+    padding-top: 2%;
+  }
+
+  .herkunftSubpage p {
+  font-size: 3rem;
+  }
+
+  .ursprung__infotext, .herkunftSubpage h2 {
+    text-align: left;
+  }
+
+  .herkunftSubpage video {
+    width: 60vw;
+  }
+
+  .herkunft__anbaugebiete {
+  display: flex;
+  margin:5%;
+  }
+
+  .herkunft__anbaugebiete p {
+    text-align: left;
+
+    margin:0;
+    padding:0;
+  }
+
+  .herkunft__anbaugebiete h2 {
+    margin:0;
+    padding:0;
+  }
+  
+
+ .img--anbaugebiete {
+  width: 45vw;
+ }
+
+ .herkunft__menschenwohl { 
+  display: flex;
+  flex-direction: row-reverse;
+  margin:5%;
+ }
+
+ .herkunft__menschenwohl h2, p {
+   text-align: right;
+ }
+
+ .herkunft__menschenwohl img {
+   width: 35vw;
+   margin:0;
+ }
+} 
 
 

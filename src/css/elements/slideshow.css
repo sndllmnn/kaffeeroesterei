@@ -121,7 +121,7 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-  .starteseite__kaffeesorten-slideshow {
+  .starteseite__kaffeesorten--mobileOnly {
     display: none;
   }
   .slideshow__heading {

@@ -157,6 +157,7 @@
   width: 90vw;
 }
 
+
 .img--innenraum {
   display: flex;
   justify-content: flex-end;
@@ -353,10 +354,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 
-.starteseite__kaffeesorten-slideshow {
-  display: none;
-}
 @media screen and (min-width: 768px) {
+
+  .starteseite__kaffeesorten--mobileOnly {
+    display: none;
+  }
   .img--kaffeepackung {
     width: 300px;
   }
@@ -662,9 +664,10 @@
   position: relative;
 }
 
-.anfahrtResponsive iframe {
+.kommVorbei iframe {
   left: 0;
   position: absolute;
+  height: 50vh;
 }
 
 .kommVorbei h2 {
