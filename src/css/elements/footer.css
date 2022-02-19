@@ -38,7 +38,13 @@
 .FooterInfos {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 85vw;
+  height: 15vh;
+}
+
+.FooterDropdown {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -60,14 +66,17 @@
   }
 
   .footer {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
+  .footer {
+    padding-top: 15%;
+  }
+
   .footer img {
     width: 3.5rem;
   }
@@ -75,13 +84,27 @@
   .footer a {
     font-size: 24px;
     margin-right: 10%;
-
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+  .FooterInfos {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    height: 15vh;
+  }
 
+  .footerLeft {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    padding-top: 0;
+  }
 
   .footer img {
     width: 4.5rem;
@@ -95,7 +118,8 @@
     font-size: 3rem;
   }
 
-  .footer p {
+  .footer p,
+  a {
     font-size: 2rem;
   }
 
@@ -106,25 +130,24 @@
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
+  .footer img {
+    width: 6.5rem;
+  }
 
-    .footer img {
-        width: 6.5rem;
-      }
-
-    .footer h5 {
-        font-size: 6.5rem;
-    }
+  .footer h5 {
+    font-size: 6.5rem;
+  }
 
   .footer h4 {
-      font-size: 5rem;
+    font-size: 5rem;
   }
 
   .footer p {
-  font-size: 4rem;
-  text-align: left;
+    font-size: 4rem;
+    text-align: left;
   }
 
   .footer a {
     font-size: 4rem;
-    }
+  }
 }
