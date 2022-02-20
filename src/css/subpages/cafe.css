@@ -1,56 +1,68 @@
 .cafeSubpage {
-    background-color:white;
-    padding: 5% 0;
+  background-color: white;
+  padding: 5% 0;
 }
 
 .cafeSubpage p {
-    margin: 2% 5%;
+  margin: 2% 5%;
 }
 
 .cafeSubpage .infotext__visit {
   width: 100vw;
 }
 
+.cafeImage {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5%;
+}
+
 .img--kaffeemaschine {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 5%;
-  }
-
-  .cafeSubpage img {
-    margin: 5%;
-    width: 60vw;
-  }
-
+  margin: 5%;
+  width: 60vw;
+}
 
 .cafe__header {
-    background-image: url("../../images/cafeSitzplaetzeRusticaKiel.png");
-  }
+  background-image: url("../../images/cafeSitzplaetzeRusticaKiel.png");
+}
 
-  .cafeSubpage iframe {
-    width: 100vw;
-    border:0;
-  }
+.cafeSubpage iframe {
+  width: 100vw;
+  border: 0;
+}
+
+ /* GALLERY */
+
+
+.cafe__grid {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height: 100vh;
+}
+
+.grid__item {
+  width: 45vw;
+  margin: 5%;
+}
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .cafeSubpage .backButton {
-    margin-top:7vh;
+    margin-top: 7vh;
   }
 }
-
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .cafeSubpage p {
     font-size: 2rem;
-    }
-    .cafeSubpage .backButton {
-      margin-top:9vh;
-    }
+  }
+  .cafeSubpage .backButton {
+    margin-top: 9vh;
+  }
 }
-
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
@@ -58,31 +70,28 @@
     height: 70vh;
   }
 
-  .cafeSubpage
-  .roesterei__infotext {
+  .cafeSubpage .roesterei__infotext {
     text-align: left;
   }
 
   .cafeSubpage .backButton {
-    margin-top:15vh;
+    margin-top: 15vh;
   }
 }
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
-.cafeSubpage h2 {
-  font-size: 7em;
-}
-.cafeSubpage p {
-  font-size: 3rem;
-}
+  .cafeSubpage h2 {
+    font-size: 7em;
+  }
+  .cafeSubpage p {
+    font-size: 3rem;
+  }
 
-.cafeSubpage .backButton {
-  margin-top:20vh;
+  .cafeSubpage .backButton {
+    margin-top: 20vh;
+  }
 }
-}
- 
-
 
 /*
   .herkunftSubpage p {
@@ -122,5 +131,3 @@
    margin:0;
  }
 } */
-
-
