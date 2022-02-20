@@ -31,21 +31,29 @@
   border: 0;
 }
 
- /* GALLERY */
+/* GRID GALLERY */
 
+.cafe__grid--horizontal {
+  display: none;
+}
 
-.cafe__grid {
+.cafe__grid--vertical {
   display: flex;
   width: 100vw;
   justify-content: center;
-  height: 100vh;
 }
 
-.grid__item {
+.grid__item--vertical {
   width: 45vw;
   margin: 5%;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .grid__item--vertical img {
+    width: 40vw;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -62,6 +70,10 @@
   .cafeSubpage .backButton {
     margin-top: 9vh;
   }
+
+  .cafe__grid--vertical {
+    display: none;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -76,6 +88,18 @@
 
   .cafeSubpage .backButton {
     margin-top: 15vh;
+  }
+
+  .cafe__grid--vertical {
+    display: none;
+  }
+
+  .cafe__grid--horizontal {
+    display: flex;
+  }
+
+  .cafe__grid--horizontal div {
+    margin: 1%;
   }
 }
 
