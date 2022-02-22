@@ -1,5 +1,5 @@
- /* NAVIGATION BAR  */
- .header {
+/* NAVIGATION BAR  */
+.header {
   background-attachment: scroll;
   background-color: black;
   background-position: center;
@@ -10,17 +10,67 @@
   padding: 5%;
 }
 
- nav {
+nav {
   display: inline-flex;
   justify-content: space-between;
   background-color: transparent;
   width: 90vw;
 }
 
-
 .navKategorien {
   display: none;
 }
+
+.toggleMenu{
+  display: none;
+}
+
+.burgerMenu {
+  background-color: transparent;
+  background-image: url("../images/menuKaffeeroestereiRustica.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
+.toggleMenu.show {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 30vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.toggleMenu.show li {
+  font-size: 2rem;
+  margin: 1% 0;
+  list-style: none;
+}
+
+.toggleMenu.show li a {
+  cursor: pointer;
+}
+
+.closeButton {
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  width: 90vw;
+  justify-content: right;
+}
+.closeButton:hover {
+font-weight: bolder;
+}
+
 
 * {
   box-sizing: border-box;
@@ -28,11 +78,11 @@
 }
 
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   letter-spacing: 0;
   text-decoration: none;
-  padding:;
-  margin:0;
+  padding: ;
+  margin: 0;
   width: 100vw;
 }
 
@@ -42,147 +92,139 @@ body {
   box-sizing: inherit;
 }
 
-  /* LINKS */
+/* LINKS */
 
-  /* alle Links werden beim mit-Tab-Fokussieren hervorgehoben */
-  a:focus {
-    background-color: #FFFFFF;
-    color: #3A3734;
-    outline: none;
-  }
+/* alle Links werden beim mit-Tab-Fokussieren hervorgehoben */
+a:focus {
+  background-color: #ffffff;
+  color: #3a3734;
+  outline: none;
+}
 
-  a {
-    color: white;
-    font-weight: lighter;
-    outline: none;
-    text-decoration: none;
-  }
+a {
+  color: white;
+  font-weight: lighter;
+  outline: none;
+  text-decoration: none;
+}
 
-  a:hover {
-    font-weight: bolder;
-  }
+a:hover {
+  font-weight: bolder;
+}
 
-  a:visited {
-      text-decoration: none;
-      background-color: transparent;
-    }
+a:visited {
+  text-decoration: none;
+  background-color: transparent;
+}
 
-  /* SCHRIFT */
+/* SCHRIFT */
 
-  h1 {
-    font-size: 96px;
-    font-weight: 900;
-    color: white;
-  }
+h1 {
+  font-size: 96px;
+  font-weight: 900;
+  color: white;
+}
 
+h2 {
+  font-size: 2.4em;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: white;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  font-weight: normal;
+  color: black;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
   h2 {
-    font-size: 2.4em;
-    margin-bottom: 0;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2.5rem;
   }
 
-
-  h4 {
-    font-size: 1.5em;
-    font-weight: lighter;
-    color: white;
+  p,
+  a,
+  h4,
+  li {
+    font-size: 1.2rem;
   }
 
-  h5 {
+  .logo {
+    width: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p,
+  li {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  h4,
+  a {
     font-size: 2rem;
   }
 
-  p {
-    font-weight: normal;
-    color: black;
+  h5 {
+    font-size: 3rem;
   }
 
-  
+  .logo {
+    width: 50px;
+    margin: 0;
+  }
+}
 
-
-  /* MEDIA QUERIES */
-
-  /* Small devices (landscape phones, 576px and up) */
-  @media screen and (min-width: 576px) {
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 2.5rem;
-    }
-
-    p,
-    a,  
-    h4,
-li {
-      font-size: 1.2rem;
-    }
-
-    .logo {
-      width: 40px;
-    }
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .burgerMenu {
+    display: none;
   }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-
-    p,
-    li {
-      font-size: 1.5rem;
-    }
-
-
-    h2 {
-      font-size: 4rem;
-    }
-
-    h3 {
-      font-size: 3em;
-    }
-
-    h4,
-    a {
-      font-size: 2rem;
-    }
-
-    h5 {
-      font-size: 3rem;
-    }
-
-    .logo {
-      width: 50px;
-      margin:0;
-    }
+  .navKategorien {
+    display: inline-flex;
+    width: 40vw;
+    justify-content: space-between;
   }
 
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
-
-    .burgerMenu {
-      display: none;
-    }
-
-    .navKategorien {
-      display: inline-flex;
-      width: 40vw;
-      justify-content: space-between;
-    }
-
-    .navKategorien a {
-      font-size: 1.5rem;
-    }
-
-    .warenkorbIcon {
-      width: 30px;
-    }
+  .navKategorien a {
+    font-size: 1.5rem;
   }
 
-  /* Extra large devices (large desktops, 1200px and up) */
+  .warenkorbIcon {
+    width: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
   .logo {
     width: 4rem;
@@ -191,10 +233,10 @@ li {
   nav {
     width: 95vw;
   }
-  }
+}
 
-  /* Very large desktop devices (1920px and up) */
-@media screen and (min-width: 1920px) { 
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
   .logo {
     width: 5rem;
   }
