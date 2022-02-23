@@ -3,8 +3,7 @@ const navSidebar = document.querySelector(".toggleMenu");
 const closeButton = document.querySelector(".closeButton");
 
 function openBurgerMenu() {
-    navSidebar.classList.toggle('show');
-    
+    navSidebar.classList.toggle('show'); 
 };
 
 function closeWindow() {

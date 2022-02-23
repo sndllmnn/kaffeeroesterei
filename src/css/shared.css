@@ -25,6 +25,7 @@ nav {
 
 .toggleMenu{
   display: none;
+
 }
 
 .burgerMenu {
@@ -41,7 +42,7 @@ nav {
 .toggleMenu.show {
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  height: 80vh;
   width:100vw; 
   top: 0;
   left: 0;
@@ -51,8 +52,9 @@ nav {
   list-style: none;
   position: fixed;
   text-align: center;
-  justify-content: center;
+  justify-content:center;
   background-color: black;
+
 }
 
 .navKategorien--sidebar {
@@ -79,6 +81,7 @@ nav {
   font-size: 2rem;
   width: 90vw;
   justify-content:flex-end;
+  top:0;
 }
 .closeButton:hover {
 font-weight: bolder;
