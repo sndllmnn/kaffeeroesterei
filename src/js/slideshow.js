@@ -30,27 +30,32 @@ function nextSlide() {
   if (newCurrentDot > 3) {
     newCurrentDot = 0;
   }
-// funktioniert 
+
+  if (newCurrentSlide === 0) {
+    slides[1].classList.remove("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[3].classList.remove("slide4Active");
+    slides[0].classList.add("slide0Active");
+  }
   if (newCurrentSlide === 1) {
     slides[1].classList.add("slide2Active");
     slides[2].classList.remove("slide3Active");
     slides[3].classList.remove("slide4Active");
-
+    slides[0].classList.remove("slide0Active");
   }
-// funktioniert noch nicht
-    if (newCurrentSlide === 2) {
-      slides[2].classList.add("slide3Active");
-      slides[1].classList.remove("slide2Active");
-      slides[3].classList.remove("slide4Active");
-    }
+  if (newCurrentSlide === 2) {
+    slides[2].classList.add("slide3Active");
+    slides[1].classList.remove("slide2Active");
+    slides[3].classList.remove("slide4Active");
+    slides[0].classList.remove("slide0Active");
+  }
 
-// funktioniert noch nicht 
-      if (newCurrentSlide === 3) {
-        slides[3].classList.add("slide4Active");
-        slides[1].classList.remove("slide2Active");
-        slides[2].classList.remove("slide3Active");
-      }
-
+  if (newCurrentSlide === 3) {
+    slides[3].classList.add("slide4Active");
+    slides[1].classList.remove("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[0].classList.remove("slide0Active");
+  }
 
   slides[newCurrentSlide].classList.add("active");
   slideshowDots[newCurrentDot].classList.add("active");
@@ -74,6 +79,33 @@ function prevSlide(number) {
     newCurrentDot = 3;
   }
 
+  if (newCurrentSlide === 0) {
+    slides[1].classList.remove("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[3].classList.remove("slide4Active");
+    slides[0].classList.add("slide0Active");
+  }
+  if (newCurrentSlide === 1) {
+    slides[1].classList.add("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[3].classList.remove("slide4Active");
+    slides[0].classList.remove("slide0Active");
+  }
+  if (newCurrentSlide === 2) {
+    slides[2].classList.add("slide3Active");
+    slides[1].classList.remove("slide2Active");
+    slides[3].classList.remove("slide4Active");
+    slides[0].classList.remove("slide0Active");
+  }
+
+  if (newCurrentSlide === 3) {
+    slides[3].classList.add("slide4Active");
+    slides[1].classList.remove("slide2Active");
+    slides[2].classList.remove("slide3Active");
+    slides[0].classList.remove("slide0Active");
+  }
+
+
   slides[newCurrentSlide].classList.add("active");
   slideshowDots[newCurrentDot].classList.add("active");
 
@@ -83,5 +115,3 @@ function prevSlide(number) {
 
 arrowNext.addEventListener("click", nextSlide);
 arrowPrev.addEventListener("click", prevSlide);
-
-

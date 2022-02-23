@@ -36,8 +36,8 @@ nav {
 .toggleMenu.show {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   height: 30vh;
+  width:100vw; 
   top: 0;
   left: 0;
   right: 0;
