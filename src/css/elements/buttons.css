@@ -37,6 +37,10 @@
   margin: 5% auto 0 auto;
 }
 
+.header__content .shopbutton {
+  margin-top:0;
+}
+
 .shopbutton,
 .backButton {
   padding: 3%;

@@ -11,10 +11,12 @@
 }
 
 nav {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   background-color: transparent;
   width: 90vw;
+  margin:auto;
+  padding: 5%;
 }
 
 .navKategorien {
@@ -28,10 +30,13 @@ nav {
 .burgerMenu {
   background-color: transparent;
   background-image: url("../images/menuKaffeeroestereiRustica.svg");
+  background-size: 1.7rem;
   background-repeat: no-repeat;
+  background-position: center;
   border: 0;
   cursor: pointer;
 }
+
 
 .toggleMenu.show {
   display: flex;
@@ -50,6 +55,14 @@ nav {
   background-color: black;
 }
 
+.navKategorien--sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding:0;
+}
+
 .toggleMenu.show li {
   font-size: 2rem;
   margin: 1% 0;
@@ -65,7 +78,7 @@ nav {
   display: flex;
   font-size: 2rem;
   width: 90vw;
-  justify-content: right;
+  justify-content:flex-end;
 }
 .closeButton:hover {
 font-weight: bolder;
@@ -171,6 +184,19 @@ p {
   .logo {
     width: 40px;
   }
+
+
+  .toggleMenu.show a {
+    font-size: 2rem;
+  }
+
+  nav {
+    padding: 3%;
+  }
+
+  .burgerMenu {
+    background-size: 2.5rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -200,6 +226,10 @@ p {
   .logo {
     width: 50px;
     margin: 0;
+  }
+
+  .toggleMenu.show a {
+    font-size: 2.5rem;
   }
 }
 
