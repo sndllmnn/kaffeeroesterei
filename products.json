@@ -1,0 +1,26 @@
+[
+{
+  "id": "0",
+  "productName": "Kolumbien",
+  "price": "10",
+  "productDescription": "bla bla leckerer kaffeeyy",
+}
+{
+"id": "1",
+"productName": "Äthiopien",
+"price": "10",
+"productDescription": "megaa lecker , locker zehn von zehn",
+} 
+{
+  "id": "2",
+  "productName": "Ruanda",
+  "price": "10",
+  "productDescription": "wooould definitely recommend, try this",
+  } 
+  {
+    "id": "3",
+    "productName": "Nicaragua",
+    "price": "10",
+    "productDescription": "voll lecker, versprochen",
+    } 
+]
