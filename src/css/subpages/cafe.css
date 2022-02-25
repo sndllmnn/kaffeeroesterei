@@ -71,8 +71,25 @@
     margin-top: 9vh;
   }
 
-  .cafe__grid--vertical {
+  .grid__item--vertical {
     display: none;
+  }
+
+  .cafe__grid--horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .cafe__grid--horizontal div {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24vw;
+  }
+
+  .grid__item--horizontal {
+    margin: 1%;
   }
 }
 
@@ -95,11 +112,7 @@
   }
 
   .cafe__grid--horizontal {
-    display: flex;
-  }
-
-  .cafe__grid--horizontal div {
-    margin: 1%;
+    margin: auto 1%;
   }
 }
 
@@ -116,42 +129,3 @@
     margin-top: 20vh;
   }
 }
-
-/*
-  .herkunftSubpage p {
-  font-size: 3rem;
-  }
-
-
-  .herkunft__anbaugebiete p {
-    text-align: left;
-
-    margin:0;
-    padding:0;
-  }
-
-  .herkunft__anbaugebiete h2 {
-    margin:0;
-    padding:0;
-  }
-  
-
- .img--anbaugebiete {
-  width: 45vw;
- }
-
- .herkunft__menschenwohl { 
-  display: flex;
-  flex-direction: row-reverse;
-  margin:5%;
- }
-
- .herkunft__menschenwohl h2, p {
-   text-align: right;
- }
-
- .herkunft__menschenwohl img {
-   width: 35vw;
-   margin:0;
- }
-} */

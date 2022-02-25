@@ -12,3 +12,4 @@ function closeWindow() {
 
 burgerMenu.addEventListener('click', openBurgerMenu);
 closeButton.addEventListener('click', closeWindow);
+
