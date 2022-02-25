@@ -1,13 +1,18 @@
+const currentPath = window.location.pathname;
+
+import products from '../../products.json';
+
+//erstmal hier bauen, dann über import-export in shop.js verschieben
+function shop() {
+    if (currentPath = /subpages/shop.html) {
+    
 
 
-/* import myFunction, { multiply } from "./myModule";
 
-myFunction();
+window.addEventListener('DOMContentLoaded', shop);
 
-const result = multiply(2, 5);
 
-console.log(result); */
-
+/* funktioniert nicht, grid gallery cafe subpage 
 import Masonry from 'masonry-layout';
 
 window.onload = () => {
@@ -15,4 +20,4 @@ window.onload = () => {
     const masonry = new Masonry(grid, {
         itemSelector: '.grid__item--vertical',
     });
-};
+}; */
