@@ -1,15 +1,8 @@
-const currentPath = window.location.pathname;
 
-import products from '../../products.json';
-
-//erstmal hier bauen, dann über import-export in shop.js verschieben
-function shop() {
-    if (currentPath = /subpages/shop.html) {
+import shop from "./shop";
     
 
 
-
-window.addEventListener('DOMContentLoaded', shop);
 
 
 /* funktioniert nicht, grid gallery cafe subpage 

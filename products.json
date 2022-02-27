@@ -1,26 +1,103 @@
-[
-{
-  "id": "0",
-  "productName": "Kolumbien",
-  "price": "10",
-  "productDescription": "bla bla leckerer kaffeeyy",
-}
-{
-"id": "1",
-"productName": "Äthiopien",
-"price": "10",
-"productDescription": "megaa lecker , locker zehn von zehn",
-} 
-{
-  "id": "2",
-  "productName": "Ruanda",
-  "price": "10",
-  "productDescription": "wooould definitely recommend, try this",
-  } 
-  {
-    "id": "3",
-    "productName": "Nicaragua",
-    "price": "10",
-    "productDescription": "voll lecker, versprochen",
-    } 
-]
+
+    //valid json, export missing
+    [
+    {
+      "id": "0",
+      "productName": "Kolumbien",
+      "price": "10",
+      "productDescription": "bla bla leckerer kaffeeyy",
+      "variants": [
+        {
+          "name": "500g",
+          "weight": 500,
+          "price": 5
+        },
+        {
+          "name": "1kg",
+          "weight": 1000,
+          "price": 10
+        },
+        {
+          "name": "5kg",
+          "weight": 5000,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "productName": "Äthiopien",
+      "price": "10",
+      "productDescription": "megaa lecker , locker zehn von zehn",
+      "variants": [
+        {
+          "name": "500g",
+          "weight": 500,
+          "price": 5
+        },
+        {
+          "name": "1kg",
+          "weight": 1000,
+          "price": 10
+        },
+        {
+          "name": "5kg",
+          "weight": 5000,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "productName": "Ruanda",
+      "price": "10",
+      "productDescription": "wooould definitely recommend, try this",
+      "variants": [
+        {
+          "name": "500g",
+          "weight": 500,
+          "price": 5
+        },
+        {
+          "name": "1kg",
+          "weight": 1000,
+          "price": 10
+        },
+        {
+          "name": "5kg",
+          "weight": 5000,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "productName": "Nicaragua",
+      "price": "10",
+      "productDescription": "voll lecker, versprochen",
+      "variants": [
+        {
+          "name": "500g",
+          "weight": 500,
+          "price": 5
+        },
+        {
+          "name": "1kg",
+          "weight": 1000,
+          "price": 10
+        },
+        {
+          "name": "5kg",
+          "weight": 5000,
+          "price": 50
+        }
+      ]
+    }
+    ]
+
+    
+
+
+
+
+
