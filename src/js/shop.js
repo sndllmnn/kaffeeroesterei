@@ -39,7 +39,6 @@ function shop() {
     }
 }
 
-
 window.addEventListener("DOMContentLoaded", shop);
 
 /* named export

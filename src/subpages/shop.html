@@ -17,15 +17,59 @@
     <!-- später index.js einbinden bzw main js erstellen und einbinden -->
   </head>
   <body>
-    <header class="header shop__header">{{> nav}}</header>
     <div class="shopSubpage">
+      <header class="header shop__header">{{> nav}}</header>
+
       <h2 class="heading--schwarz">Entdecke unsere Kaffeesorten</h2>
 
-      <section class="products"></section>
+      <section class="products">
+
+        <div class="shopkachel">
+          <img class="img--kaffeepackung" src="../../images/kaffeepackungCostaRicaGross.png" alt="Café Rustica Kiel von innen">
+          <p class="costaRica">Beispiel 1</p>
+          <p class="kaffeepreis"> 6,90€ - 26,90€ </p>
+          <div class="icons">
+              <img class="icon" src="../images/shopImages/iconKaffeebphnenBlack.svg.svg" alt="schwarzes Icon mit drei Kaffeebohnen">
+              <img class="icon" src="../images/shopImages/iconFrenchPressBlack.svg" alt="schwarzes Icon einer Frenchpress">
+              <img class="icon" src="../images/shopImages/iconKaffeeschaufelBlack.svg.svg"
+                  alt="schwarzes Icon einer Kaffeeschaufel mit Kaffeebohnen">
+          </div>
+      </div>
+      <div class="shopkachel">
+        <img class="img--kaffeepackung" src="../../images/kaffeepackungCostaRicaGross.png" alt="Café Rustica Kiel von innen">
+        <p class="costaRica">Beispiel 2</p>
+        <p class="kaffeepreis"> 6,90€ - 26,90€ </p>
+        <div class="icons">
+          <img class="icon" src="../images/shopImages/iconKaffeebphnenBlack.svg.svg" alt="schwarzes Icon mit drei Kaffeebohnen">
+          <img class="icon" src="../images/shopImages/iconFrenchPressBlack.svg" alt="schwarzes Icon einer Frenchpress">
+          <img class="icon" src="../images/shopImages/iconKaffeeschaufelBlack.svg.svg"
+              alt="schwarzes Icon einer Kaffeeschaufel mit Kaffeebohnen">
+        </div>
     </div>
+  </section>
+  
+
+
+  
+  
+  <div class="kommVorbei">
+    <h2> Komm vorbei </h2>
+
+    <div class="anfahrtResponsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.855880722406!2d10.119826751627297!3d54.34185538010262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1643384000475!5m2!1sde!2sde"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+<div class="button backButton">
+  <a href="../index.html">Zurück</a>
+</div>
+</div>
+  
 
     {{>footer}}
-    <script src="../js/shop.js"></script>
-
+    <!-- <script src="../js/shop.js"></script> -->
   </body>
 </html>

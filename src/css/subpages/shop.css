@@ -1,0 +1,47 @@
+.shopSubpage {
+  background-color: white;
+}
+
+.shop__header {
+  background:black;
+  height: 50px;
+  padding: 0 0 5% 0;
+}
+
+.shopSubpage h2 {
+  font-size: 2em;
+  padding-top:5%;
+}
+
+.products {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.products .shopkachel {
+  display:flex;
+  flex-direction: column;
+  margin: 0 1%;
+  width: 45vw;
+}
+
+.products .shopkachel p {
+  margin:2% 0;
+}
+
+.products .shopkachel img {
+  background-color:#E9E9E9;
+}
+
+.products .shopkachel .icons .icon {
+  color:black;
+}
+
+.shopSubpage .backButton {
+  margin: 15% auto 5% auto;
+}
+
+
+
