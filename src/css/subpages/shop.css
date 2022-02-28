@@ -2,6 +2,14 @@
   background-color: white;
 }
 
+.shopSubpage h4 {
+  text-align: center;
+}
+
+.shopSubpage h4 {
+  color:red;
+}
+
 .shop__header {
   background:black;
   height: 50px;
@@ -20,28 +28,51 @@
   width: 100vw;
 }
 
-.products .shopkachel {
+.product {
   display:flex;
   flex-direction: column;
   margin: 0 1%;
   width: 45vw;
 }
 
-.products .shopkachel p {
-  margin:2% 0;
-}
-
-.products .shopkachel img {
+.productImageWrapper {
   background-color:#E9E9E9;
-}
+  width: 45vw;
+height: 10vh;}
 
-.products .shopkachel .icons .icon {
-  color:black;
-}
+.product p {
+    margin:2% 0;
+  }
+
+
+
 
 .shopSubpage .backButton {
   margin: 15% auto 5% auto;
 }
+
+/* EXAMPLE */
+
+.productsExample .shopkachel {
+  display:flex;
+  flex-direction: column;
+  margin: 0 1%;
+  width: 45vw;
+}
+
+.productsExample .shopkachel p {
+  margin:2% 0;
+}
+
+.productsExample .shopkachel img {
+  background-color:#E9E9E9;
+}
+
+.productsExample .shopkachel .icons .icon {
+  color:black;
+}
+
+
 
 
 

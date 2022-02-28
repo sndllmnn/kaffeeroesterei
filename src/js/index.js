@@ -1,5 +1,4 @@
 
-import shop from "./shop";
     
 
 

@@ -1,9 +1,10 @@
 
-    //valid json, export missing
-    [
+
+[
     {
       "id": "0",
       "productName": "Kolumbien",
+      "productImage": "images/kaffeepackungCostaRica",
       "price": "10",
       "productDescription": "bla bla leckerer kaffeeyy",
       "variants": [
@@ -27,6 +28,7 @@
     {
       "id": "1",
       "productName": "Äthiopien",
+      "productImage": "images/kaffeepackungCostaRica",
       "price": "10",
       "productDescription": "megaa lecker , locker zehn von zehn",
       "variants": [
@@ -50,6 +52,7 @@
     {
       "id": "2",
       "productName": "Ruanda",
+      "productImage": "images/kaffeepackungCostaRica",
       "price": "10",
       "productDescription": "wooould definitely recommend, try this",
       "variants": [
@@ -73,6 +76,7 @@
     {
       "id": "3",
       "productName": "Nicaragua",
+      "productImage": "images/kaffeepackungCostaRica",
       "price": "10",
       "productDescription": "voll lecker, versprochen",
       "variants": [

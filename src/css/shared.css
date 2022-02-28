@@ -34,26 +34,31 @@ nav {
 }
 
 .toggleMenu{
-  display: none;
-  opacity:0;
+  position:fixed;
+  top:0;
+  left:100vw;
+  transition: left 1s;
+
 }
 
-.toggleMenu.show {
+.toggleMenu {
   opacity: 1;
   display: flex;
   flex-direction: column;
   width:100vw; 
   top: 0;
-  left: 0;
-  right: 0;
   padding: 0;
   margin: 0;
-  list-style: none;
   position: fixed;
   text-align: center;
   justify-content:center;
   background-color: black;
-  height:80vh;
+  height:100vh;
+
+  &.show {
+    left: 0;
+
+  }  
 }
 
 .navKategorien__sidebar { 
@@ -66,7 +71,7 @@ nav {
 }
 
 
-.toggleMenu.show li {
+.toggleMenu li {
   font-size: 1.5rem;
   margin: 1% 0;
   list-style: none;
