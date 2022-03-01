@@ -1,14 +1,11 @@
 /* pathname shop: /subpages/shop.html */
 
-/* const currentPath = window.location.pathname; -> wenn aktiv geht's nicht,
-wird aber auch so erkannt */
 
 import products from "../../products.json";
 
+
 function createProductElements() {
   const productSection = document.querySelector(".products");
-
-  /* if (currentPath = "/subpages/shop.html") { */
 
   products.forEach((product) => {
     // für jedes Array Element von der products.json
@@ -20,7 +17,7 @@ function createProductElements() {
     productImageWrapper.classList.add("productImageWrapper");
 
     const productImage = document.createElement("img");
-    productImage.classList.add('productImage--shop'),
+    productImage.classList.add('img--kaffeepackung'),
     productImage.src = "/images/kaffeepackungCostaRica.png";
 
     const productTitle = document.createElement("p");
@@ -28,7 +25,7 @@ function createProductElements() {
     const productTitleText = document.createTextNode(product.productName);
 
     const productPrice = document.createElement("p");
-    productPrice.classList.add("productPrice");
+    productPrice.classList.add("coffeePrice");
     const productPriceText = document.createTextNode(product.price);
 
     const productIcons = document.createElement("div");
@@ -57,3 +54,21 @@ function createProductElements() {
 window.addEventListener("DOMContentLoaded", createProductElements);
 
 /* named export export {shop}; */
+
+function coffeeImageBackground(color) {
+    if (window.location.pathname === "/subpages/shop.html") {
+        const coffeeImages = [document.querySelectorAll('.img--kaffeepackung')];
+
+      coffeeImages.forEach((coffeeImage) => {
+      cofeeImages.style.backgroundColor = color;
+    });
+  }
+
+window.addEventListener("DOMContentLoaded", function() { coffeeImageBackground('transparent')});
+
+
+
+
+
+
+

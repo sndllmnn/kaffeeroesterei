@@ -2,14 +2,6 @@
   background-color: white;
 }
 
-.shopSubpage h4 {
-  text-align: center;
-}
-
-.shopSubpage h4 {
-  color: red;
-}
-
 .shop__header {
   background: black;
   height: 50px;
@@ -31,17 +23,24 @@
 .product {
   display: flex;
   flex-direction: column;
-  margin: 2%;
+  margin: 0 1% 5vh 1%;
   width: 45vw;
 }
 
 .productImageWrapper {
   background-color: #e9e9e9;
-  width: 45vw;
+  min-width: 20vw;
+  max-width: 45vw;
+  display: flex;
+  justify-content: center;
 }
 
 .product p {
-  margin: 1% 0;
+  margin: 2% 0;
+}
+
+.coffeePrice {
+  color: #737373;
 }
 
 .shopSubpage .backButton {
