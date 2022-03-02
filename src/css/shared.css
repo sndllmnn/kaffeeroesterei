@@ -19,8 +19,8 @@ nav {
   padding: 5%;
   position: fixed;
 
-  &.sticky {
-    background-color:white;
+  & .sticky {
+    background-color:black;
   }
 }
 
