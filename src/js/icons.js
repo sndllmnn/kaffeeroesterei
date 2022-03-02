@@ -1,6 +1,6 @@
-import coffeeBeans from "../images/iconKaffeebohnen.svg";
-import frenchPress from "../images/iconFrenchPress.svg";
-import coffeeScoop from "../images/iconKaffeeschaufel.svg";
+import coffeeBeans from "../images/iconKaffeebohnenBlack.svg";
+import frenchPress from "../images/iconFrenchPressBlack.svg";
+import coffeeScoop from "../images/iconKaffeeschaufelBlack.svg";
 
 export const categoryIcons = {
     coffeeBeans,
@@ -12,5 +12,5 @@ export default {
     coffeeBeans,
     frenchPress,
     coffeeScoop,
-};
+}
 

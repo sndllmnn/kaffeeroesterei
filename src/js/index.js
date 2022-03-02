@@ -1,19 +1,6 @@
-const nav = document.querySelector('nav');
-const bgColor = document.querySelector(background-color);
-
 function changeNavColor() {
-    const navTransparent = document.querySelector('.nav--transparent');
-    const navBlackWhite = document.querySelector('.nav--blackWhite');
-
-    if ((this).bgColor.match(white)) { //sind nicht alle auf white... #fffff etc. und schließt img aus
-        navTransparent.classList.add('.inactive');
-        navBlackWhite.classList.add('.active');
-    }
-
-        else {
-        navTransparent.classList.remove('.inactive');
-        navBlackWhite.classList.remove('.active');
-}
+    const navBar = document.querySelector('nav');
+    navBar.classList.add('.sticky');
 }
 
 document.addEventListener('scroll', changeNavColor());

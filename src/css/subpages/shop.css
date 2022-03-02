@@ -45,6 +45,11 @@
   color: #737373;
 }
 
+.productIcons * {
+  margin:2% 5% 0 0;
+  height: 100%;
+}
+
 .shopSubpage .backButton {
   margin: 15% auto 5% auto;
 }
