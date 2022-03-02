@@ -1,7 +1,5 @@
-/* pathname shop: /subpages/shop.html */
-
-
 import products from "../../products.json";
+/* import { categoryIcons } from "./icons"; */
 
 
 function createProductElements() {
@@ -17,8 +15,8 @@ function createProductElements() {
     productImageWrapper.classList.add("productImageWrapper");
 
     const productImage = document.createElement("img");
-    productImage.classList.add('img--kaffeepackung'),
-    productImage.src = "/images/kaffeepackungCostaRica.png";
+    productImage.classList.add('img--kaffeepackung--greyBg'),
+    productImage.src = "/images/kaffeepackungCostaRicaGross.png";
 
     const productTitle = document.createElement("p");
     productTitle.classList.add("productTitle");
@@ -28,17 +26,9 @@ function createProductElements() {
     productPrice.classList.add("coffeePrice");
     const productPriceText = document.createTextNode(product.price);
 
-    const productIcons = document.createElement("div");
-    productIcons.src = "/components/icons.hbs";
-
-    /* const productDescription = document.createElement('p');
-        productDescription.classList.add('productDescription'); */
-
-    /* const productIcons = document.createElement('div');
-        productImage.classList.add('productIcons');
-
-        productSection.appendChild(product);
-        /* product.appendChild(productTitle, productPrice); */
+    /* const productIcons = document.createElement("div");
+    productIcons.classList.add('productIcons');
+    productIcons. ????? = document.create ???? */
 
     [productImageWrapper, productTitle, productPrice].forEach((element) => {
       productElement.appendChild(element);
@@ -47,24 +37,11 @@ function createProductElements() {
     productImageWrapper.appendChild(productImage);
     productTitle.appendChild(productTitleText);
     productPrice.appendChild(productPriceText);
-    productElement.appendChild(productIcons);
+    /* productElement.appendChild(productIcons); */
   });
 }
 
 window.addEventListener("DOMContentLoaded", createProductElements);
-
-/* named export export {shop}; */
-
-function coffeeImageBackground(color) {
-    if (window.location.pathname === "/subpages/shop.html") {
-        const coffeeImages = [document.querySelectorAll('.img--kaffeepackung')];
-
-      coffeeImages.forEach((coffeeImage) => {
-      cofeeImages.style.backgroundColor = color;
-    });
-  }
-
-window.addEventListener("DOMContentLoaded", function() { coffeeImageBackground('transparent')});
 
 
 

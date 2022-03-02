@@ -3,9 +3,9 @@
 }
 
 .shop__header {
-  background: black;
   height: 50px;
   padding: 0 0 5% 0;
+  background-image: none;
 }
 
 .shopSubpage h2 {
@@ -29,10 +29,12 @@
 
 .productImageWrapper {
   background-color: #e9e9e9;
-  min-width: 20vw;
-  max-width: 45vw;
   display: flex;
   justify-content: center;
+}
+
+.img--kaffeepackung--greyBg {
+  width: 40vw;
 }
 
 .product p {
@@ -47,23 +49,56 @@
   margin: 15% auto 5% auto;
 }
 
-/* EXAMPLE */
-
-.productsExample .shopkachel {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1%;
-  width: 45vw;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .shopSubpage h2 {
+    font-size: 3em;
+  }
 }
 
-.productsExample .shopkachel p {
-  margin: 2% 0;
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .shopSubpage h2 {
+    font-size: 3.2em;
+  }
+  .img--kaffeepackung--greyBg {
+    width: 28vw;
+  }
+
+  .product {
+    width: 30vw;
+  }
 }
 
-.productsExample .shopkachel img {
-  background-color: #e9e9e9;
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .img--kaffeepackung--greyBg {
+    width: 20vw;
+  }
+
+  .product {
+    width: 20vw;
+  }
+
+  .product p {
+    text-align: left;
+  }
+
+  .shopSubpage .kommVorbei {
+    padding-top: 0;
+  }
 }
 
-.productsExample .shopkachel .icons .icon {
-  color: black;
+/* Very large desktop devices (1920px and up) */
+@media screen and (min-width: 1920px) {
+  .shopSubpage h2 {
+    font-size: 4em;
+  }
+  .img--kaffeepackung--greyBg {
+    width: 20vw;
+  }
+
+  .product {
+    width: 20vw;
+  }
 }

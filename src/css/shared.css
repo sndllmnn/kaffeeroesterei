@@ -10,6 +10,26 @@
   padding: 5%;
 }
 
+.nav--transparent {
+&.inactive {
+  display:none;
+} }
+
+.nav--blackWhite {
+  display:none; 
+
+&.active {
+  display:flex;
+  background-color: white;
+  width: 100vw;
+  padding:0;
+}
+} 
+
+.nav--blackWhite * {
+  padding:1% 5%;
+} 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -17,6 +37,7 @@ nav {
   width: 90vw;
   margin: auto;
   padding: 5%;
+  position: fixed;
 }
 
 .navKategorien {
@@ -32,6 +53,20 @@ nav {
   border: 0;
   cursor: pointer;
 }
+
+.burgerMenu--black {
+  background-color: white;
+  background-image: url("../images/menuKaffeeroestereiRusticaBlack.svg");
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  cursor: pointer;
+  padding-right: 12%;
+  
+}
+
+
 
 .toggleMenu {
   position: fixed;
