@@ -10,17 +10,19 @@
   padding: 5%;
 }
 
-nav {
+.mainNav {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  width: 90vw;
+  width: 100vw;
   margin: auto;
-  padding: 5%;
+  padding: 3%;
   position: fixed;
+  height:5vh;
 
-  & .sticky {
-    background-color:black;
+  &.sticky {
+    background-color:white;
+    padding-top:5vh;
   }
 }
 
@@ -36,7 +38,30 @@ nav {
   background-position: center;
   border: 0;
   cursor: pointer;
+  margin-right:5vw;
+
+
+  &.sticky{
+    background-image: url("../images/menuKaffeeroestereiRusticaBlack.svg");
+  }
 }
+
+.logo--white {
+  width: 50px;
+
+  &.invisible {
+display:none;
+  }
+}
+
+.logo--black {
+  width: 50px;
+  opacity:0;
+  &.visible {
+opacity:1;
+  }
+}
+
 
 
 
@@ -194,7 +219,7 @@ p {
     font-size: 1.2rem;
   }
 
-  .logo {
+  .logo--white {
     width: 40px;
   }
 
@@ -202,7 +227,7 @@ p {
     font-size: 2rem;
   }
 
-  nav {
+  mainNav   {
     padding: 3%;
   }
 
@@ -235,7 +260,7 @@ p {
     font-size: 3rem;
   }
 
-  .logo {
+  .logo--white {
     width: 50px;
     margin: 0;
   }
@@ -261,7 +286,7 @@ p {
     font-size: 1.5rem;
   }
 
-  nav {
+  .mainNav {
     padding-top: 2%;
   }
 
@@ -272,11 +297,11 @@ p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  .logo {
+  .logo--white {
     width: 4rem;
   }
 
-  nav {
+  mainNav {
     width: 95vw;
     padding-top: 0;
   }

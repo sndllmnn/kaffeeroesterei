@@ -1,24 +1,17 @@
 function changeNavColor() {
-    const navBar = document.querySelector('nav');
-    navBar.classList.toggle("sticky", window.scrollY > 0);
-
-    /* navBar.classList.add('.sticky'); */
+  const navBar = document.querySelector("nav");
+  const burgerMenu = document.querySelector(".burgerMenu");
+  const logoWhite = document.querySelector(".logo--white");
+  const logoBlack = document.querySelector(".logo--black");
+  navBar.classList.toggle("sticky");
+  burgerMenu.classList.toggle("sticky");
+  logoWhite.classList.toggle('invisible');
+  logoBlack.classList.toggle('visible');
 }
 
-document.addEventListener('scroll', changeNavColor);
-
-
-        
-/* function (){
-  var header = document.querySelector(".primary-header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-}) */
-
-
-
-
-
-
+window.onscroll = function () {
+  changeNavColor();
+};
 
 /* funktioniert nicht, grid gallery cafe subpage 
 import Masonry from 'masonry-layout';
