@@ -1,8 +1,8 @@
 import products from "../../products.json";
 import { categoryIcons } from "./icons.js";
 
-function createProductElements() {
-  const productSection = document.querySelector(".products");
+function showProductDetails() {
+  const productSection = document.querySelector(".product");
   
 
   products.forEach((product) => {
@@ -17,7 +17,7 @@ function createProductElements() {
 
     const clickableProductImage = document.createElement("a");
     clickableProductImage.classList.add('clickableProductImage'),
-      (clickableProductImage.href = "../subpages/productDetails/productDetails.html");
+      (clickableProductImage.href = product.detailPageURL);
 
     const productImage = document.createElement("img");
     productImage.classList.add("img--kaffeepackung--greyBg"),
@@ -53,4 +53,4 @@ function createProductElements() {
   });
 }
 
-window.addEventListener("DOMContentLoaded", createProductElements);
+window.addEventListener("DOMContentLoaded", showProductDetails);

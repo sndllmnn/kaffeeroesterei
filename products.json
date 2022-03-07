@@ -4,6 +4,7 @@
     "productName": "Kolumbien",
     "productImage": "../images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetailsKolumbien.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "bla bla leckerer kaffeeyy",
     "variants": [
@@ -29,6 +30,7 @@
     "productName": "Äthiopien",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "megaa lecker , locker zehn von zehn",
     "variants": [
@@ -51,9 +53,10 @@
   },
   {
     "id": "2",
-    "productName": "Äthiopien",
+    "productName": "Ecuador",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
 
     "productDescription": "megaa lecker , locker zehn von zehn",
@@ -80,6 +83,7 @@
     "productName": "Ruanda",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "wooould definitely recommend, try this",
     "variants": [
@@ -102,9 +106,10 @@
   },
   {
     "id": "4",
-    "productName": "Äthiopien",
+    "productName": "Honduras",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "megaa lecker , locker zehn von zehn",
     "variants": [
@@ -127,9 +132,10 @@
   },
   {
     "id": "5",
-    "productName": "Äthiopien",
+    "productName": "Mexico",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
 
     "productDescription": "megaa lecker , locker zehn von zehn",
@@ -153,9 +159,10 @@
   },
   {
     "id": "6",
-    "productName": "Äthiopien",
+    "productName": "Vietnam",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "megaa lecker , locker zehn von zehn",
     "variants": [
@@ -178,9 +185,10 @@
   },
   {
     "id": "7",
-    "productName": "Nicaragua",
+    "productName": "Peru",
     "productImage": "images/kaffeepackungCostaRica",
     "price": "10€",
+    "detailPageURL": "../subpages/productDetails/productDetails.html",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "voll lecker, versprochen",
     "variants": [

@@ -10,6 +10,7 @@
   padding: 5%;
 }
 
+
 .mainNav {
   display: flex;
   justify-content: space-between;
@@ -20,11 +21,12 @@
   position: fixed;
   height:5vh;
 
-  &.sticky {
+  &.scrollingActive {
     background-color:white;
-    padding-top:5vh;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.1);
   }
 }
+
 
 .navKategorien {
   display: none;
@@ -39,31 +41,32 @@
   border: 0;
   cursor: pointer;
   margin-right:5vw;
+  padding-right:10%;
 
 
-  &.sticky{
+
+  &.scrollingActive{
     background-image: url("../images/menuKaffeeroestereiRusticaBlack.svg");
-  }
+} 
 }
 
 .logo--white {
   width: 50px;
+  padding-left:2%;
 
-  &.invisible {
+  &.scrollingActive {
 display:none;
-  }
+  } 
 }
 
 .logo--black {
   width: 50px;
-  opacity:0;
-  &.visible {
+  padding-left:2%;
+  opacity:0; 
+  &.scrollingActive {
 opacity:1;
   }
-}
-
-
-
+} 
 
 
 .toggleMenu {
@@ -153,7 +156,6 @@ a:focus {
 }
 
 a {
-  color: white;
   font-weight: lighter;
   outline: none;
   text-decoration: none;
@@ -280,11 +282,19 @@ p {
     display: inline-flex;
     width: 40vw;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .navKategorien a {
-    font-size: 1.5rem;
+  .navKategorienLink {
+    font-size: 1.8rem;
+    color:white;
+    
+    &.scrollingActive {
+      color:black;
+    }
   }
+
+
 
   .mainNav {
     padding-top: 2%;
