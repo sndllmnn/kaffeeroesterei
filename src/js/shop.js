@@ -17,7 +17,7 @@ function createProductElements() {
 
     const clickableProductImage = document.createElement("a");
     clickableProductImage.classList.add('clickableProductImage'),
-      (clickableProductImage.href = "../subpages/productDetails/productDetails.html");
+      (clickableProductImage.href = "../subpages/productDetails.html");
 
     const productImage = document.createElement("img");
     productImage.classList.add("img--kaffeepackung--greyBg"),
@@ -53,4 +53,21 @@ function createProductElements() {
   });
 }
 
+function navDesign() {
+    const navBar = document.querySelector(".mainNav");
+    const navKategorien = document.querySelectorAll(".navKategorienLink");
+    const burgerMenu = document.querySelector(".burgerMenu");
+    const logoWhite = document.querySelector(".logo--white");
+    const logoBlack = document.querySelector(".logo--black");
+    navBar.classList.toggle("scrollingActive");
+    burgerMenu.classList.toggle("scrollingActive");
+    logoWhite.classList.toggle('scrollingActive');
+    logoBlack.classList.toggle('scrollingActive');
+  
+    navKategorien.forEach((element) => {
+    element.classList.toggle('scrollingActive');
+    })
+  }
+
 window.addEventListener("DOMContentLoaded", createProductElements);
+window.addEventListener("DOMContentLoaded", navDesign);

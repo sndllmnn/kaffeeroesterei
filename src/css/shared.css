@@ -23,7 +23,7 @@
 
   &.scrollingActive {
     background-color:white;
-    box-shadow: 0 3px 1rem rgba(0,0,0,0.1);
+    z-index:1;
   }
 }
 
@@ -61,7 +61,6 @@ display:none;
 
 .logo--black {
   width: 50px;
-  padding-left:2%;
   opacity:0; 
   &.scrollingActive {
 opacity:1;
@@ -98,6 +97,10 @@ opacity:1;
   align-items: center;
   width: 100vw;
   padding: 0;
+}
+
+.navKategorien__sidebar a {
+  color:white;
 }
 
 .toggleMenu li {
@@ -307,13 +310,16 @@ p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  .logo--white {
-    width: 4rem;
+
+
+  .mainNav {
+    width: 100vw;
+   padding:0;
+    left:0;
   }
 
-  mainNav {
-    width: 95vw;
-    padding-top: 0;
+  .navKategorien {
+    padding-right: 4vw;
   }
 }
 

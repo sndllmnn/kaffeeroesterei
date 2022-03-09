@@ -1,7 +1,35 @@
-import products from "../../products.json";
+function navDesign() {
+  const navBar = document.querySelector(".mainNav");
+  const navKategorien = document.querySelectorAll(".navKategorienLink");
+  const burgerMenu = document.querySelector(".burgerMenu");
+  const logoWhite = document.querySelector(".logo--white");
+  const logoBlack = document.querySelector(".logo--black");
+  navBar.classList.toggle("scrollingActive");
+  burgerMenu.classList.toggle("scrollingActive");
+  logoWhite.classList.toggle('scrollingActive');
+  logoBlack.classList.toggle('scrollingActive');
+
+  navKategorien.forEach((element) => {
+  element.classList.toggle('scrollingActive');
+  })
+}
+
+window.addEventListener("DOMContentLoaded", navDesign);
+
+
+
+
+/*import products from "../../products.json";
 import { categoryIcons } from "./icons.js";
 
-function showProductDetails() {
+function parameter() {
+  const urlParams = URLSearchParams.get
+
+
+
+
+
+/*function showProductDetails() {
   const productSection = document.querySelector(".product");
   
 
@@ -53,4 +81,4 @@ function showProductDetails() {
   });
 }
 
-window.addEventListener("DOMContentLoaded", showProductDetails);
+window.addEventListener("DOMContentLoaded", showProductDetails); */

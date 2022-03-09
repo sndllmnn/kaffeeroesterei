@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaffee kaufen in der Kaffeeroesterei Rustica</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Poppins:wght@100;400&family=Readex+Pro:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+  <div class="productDetailsSubpage">
+    {{> nav}}
+
+    <section class="singleProduct">
+      <p> blablabla hier kommen die kaffee details hin </p>
+    </section>
+
+    <p> BEISPIEL START </p>
+    <section class="singleProductTest">
+      <img class="singleProductImage" src="../images/kaffeepackungCostaRicaGross.png">
+      <div class="singleProductTextWrapper">
+      <h2 class="singleProductTitle"> Costa Rica </h2>
+      <p class="singleProductPrice"> 6,90€ – 26,90€ </p>
+      <p class="singleProductInfo"> Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure.
+        Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren! </p>
+      </div>
+    </section>
+
+    <p> BEISPIEL ENDE </p>
+
+
+<div class="coffeeAmountDropdown">
+      <label for="touch"><span>Wie viel Kaffee brauchst du? </span></label>               
+      <input type="checkbox" id="touch"> 
+    
+     <!-- <ul class="coffeeAmounts">
+        <li><a href="#">250g</a></li> 
+        <li><a href="#">500g</a></li>
+        <li><a href="#">1000g</a></li>
+        <li><a href="#">1500g</a></li>
+      </ul> -->
+    
+    </div> 
+
+    <div class="button shoppingCartButton">
+      <a href="../index.html">In den Warenkorb</a>
+    </div>
+
+
+    <div class="kommVorbei">
+      <h2>Komm vorbei</h2>
+
+      <div class="anfahrtResponsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.855880722406!2d10.119826751627297!3d54.34185538010262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1643384000475!5m2!1sde!2sde"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <div class="button shoppingCartButton">
+      <a href="../index.html">Zurück</a>
+    </div>
+  </div>
+
+  {{>footer}}
+  
+    <script type="module" src="../js/productDetails.js"></script>
+  </body>
+</html>

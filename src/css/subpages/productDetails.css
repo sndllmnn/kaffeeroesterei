@@ -1,0 +1,76 @@
+.productDetailsSubpage {
+  background:white;
+}
+.singleProduct {
+  color: black;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetailsSubpage nav {
+  top:0;
+}
+
+.singleProductTest {
+  color: black;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.singleProductTextWrapper {
+  padding: 0 5vw;
+}
+
+.singleProductPrice {
+  font-size: 1.3rem;
+  margin-top:2%;
+}
+
+
+.singleProductImage {
+  width: 90vw;
+  background-color: #D7BE9D;
+
+} 
+
+.coffeeAmountDropdown {
+  width : 80vw; 
+  background: #d9d9d9;
+  margin : 40px auto; 
+}
+
+.productDetailsSubpage span {
+  padding : 5%;
+  background : white; 
+  border: 0.1rem solid;
+  font-size : 1em;
+  cursor : pointer;
+  display: block;
+}
+
+.productDetailsSubpage span::after {
+  float: right;
+  right: 10%;
+  content: "˅";
+}
+
+.productDetailsSubpage .slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+
+
+
