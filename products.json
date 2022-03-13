@@ -4,6 +4,7 @@
     "productName": "Kolumbien",
     "productImage": "../images/kaffeepackungCostaRica",
     "price": "10€",
+    "url": "../subpages/productDetails1",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
     "productDescription": "bla bla leckerer kaffeeyy",
     "variants": [

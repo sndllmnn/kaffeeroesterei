@@ -1,0 +1,32 @@
+/* NAV */
+.contactSubpage h2 {
+  padding: 20% 0 0 2vw;
+}
+
+
+.contactSubpage form {
+display: flex;
+flex-direction: column;
+padding-left: 2vw;
+margin-bottom: 10vh;
+}
+
+.contactSubpage input {
+  width: 80vw;
+  margin: 1vh 0 1vh 0;
+}
+
+.contactSubpage textarea {
+  width: 80vw;
+}
+
+.privacyCheck {
+  display: inline-block;
+}
+
+
+
+.privacyCheck .privacyCheckbox {
+  width: 20px;
+  margin-right: 5px;
+}

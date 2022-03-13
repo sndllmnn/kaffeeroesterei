@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt Kaffeeroesterei Rustica</title>
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Poppins:wght@100;400&family=Readex+Pro:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/index.js" defer></script>
+    <script src="../js/navBar.js" defer></script>
+  </head>
+  <body>
+    <header class="header__contact">{{> nav}}</header>
+    <div class="contactSubpage">
+      <h2>
+        Du hast Fragen? <br />
+        Schreib uns gern!
+      </h2>
+
+      <form action="" method="get" class="contactForm">
+        <label>Name*</label>
+        <input type="text" />
+        <label> E-Mail* </label>
+        <input type="email" />
+        <label> Telefonnummer </label>
+        <input type="tel" />
+
+
+        <label> DROPDOWN FOLGT HIER </label>
+
+        <label for="regarding">Betreff</label>
+        <input
+          type="text"
+          name="betreff"
+        />
+
+
+        <label> Deine Nachricht </label>
+        <textarea rows="10"></textarea>
+        <div class="privacyCheck">
+          <input class="privacyCheckbox" type="checkbox"/>
+          <label> Ich akzeptiere die <a href="../subpages/impressum.html"> Datenschutzerklärung </a></label>
+        </div>
+      </form>
+    </div>
+
+    {{> footer }}
+  </body>
+</html>

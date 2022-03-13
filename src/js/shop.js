@@ -1,13 +1,16 @@
 import products from "../../products.json";
 import { categoryIcons } from "./icons.js";
 
+const clickableProductImages = document.querySelectorAll('.clickableProductImage');
+
+
+
 function createProductElements() {
   const productSection = document.querySelector(".products");
   
 
   products.forEach((product) => {
     const categories = product.categories;
-    // für jedes Array Element von der products.json
 
     const productElement = document.createElement("div");
     productElement.classList.add("product");
@@ -69,5 +72,18 @@ function navDesign() {
     })
   }
 
+  /* function parameter() {
+    const productId = products.get('id');
+    console.log(productId); //das hier exporten für productDetails.js?
+    window.open("'http://localhost:3000/subpages/productDetails.html'+'productId...", tab, windowFeatures);
+  } */
+
+  function openProductDetailsTab() {
+    window.open('http://localhost:3000/subpages/productDetails.html'); // + parameter!!!! 
+  }
+
+
+
 window.addEventListener("DOMContentLoaded", createProductElements);
 window.addEventListener("DOMContentLoaded", navDesign);
+clickableProductImages.addEventListener('click', openProductDetailsTab);
