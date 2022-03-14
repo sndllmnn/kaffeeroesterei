@@ -31,9 +31,10 @@ padding: 0 5vw;
 
 .coffeeAmountDropdown {
   width : 80vw; 
-  background: #d9d9d9;
+  height: 5vh;
   margin : auto; 
 }
+
 
 .productDetailsSubpage span {
   padding : 5%;

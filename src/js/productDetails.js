@@ -41,7 +41,6 @@ function createProductDetails() {
     productImageWrapper,
     productImage,
     productTitle,
-
     productPrice,
     productDescription,
   ].forEach((element) => {
