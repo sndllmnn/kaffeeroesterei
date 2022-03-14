@@ -4,7 +4,6 @@ import { categoryIcons } from "./icons.js";
 const clickableProductImages = document.querySelectorAll('.clickableProductImage');
 
 
-
 function createProductElements() {
   const productSection = document.querySelector(".products");
   
@@ -20,7 +19,7 @@ function createProductElements() {
 
     const clickableProductImage = document.createElement("a");
     clickableProductImage.classList.add('clickableProductImage'),
-      (clickableProductImage.href = "../subpages/productDetails.html");
+      (clickableProductImage.href = "../subpages/productDetails.html?id=" + product.id);
 
     const productImage = document.createElement("img");
     productImage.classList.add("img--kaffeepackung--greyBg"),
@@ -72,18 +71,25 @@ function navDesign() {
     })
   }
 
-  /* function parameter() {
-    const productId = products.get('id');
-    console.log(productId); //das hier exporten für productDetails.js?
-    window.open("'http://localhost:3000/subpages/productDetails.html'+'productId...", tab, windowFeatures);
-  } */
 
-  function openProductDetailsTab() {
-    window.open('http://localhost:3000/subpages/productDetails.html'); // + parameter!!!! 
-  }
+  const burgerMenu = document.querySelector(".burgerMenu");
+const navSidebar = document.querySelector(".toggleMenu");
+const closeButton = document.querySelector(".closeButton");
+const body = document.querySelector("body");
 
+function openBurgerMenu() {
+    navSidebar.classList.toggle('show'); 
+    body.classList.toggle('scrollStop');
+};
 
+function closeWindow() {
+    navSidebar.classList.remove('show');
+    body.classList.remove('scrollStop');
+
+};
 
 window.addEventListener("DOMContentLoaded", createProductElements);
 window.addEventListener("DOMContentLoaded", navDesign);
 clickableProductImages.addEventListener('click', openProductDetailsTab);
+burgerMenu.addEventListener('click', openBurgerMenu);
+closeButton.addEventListener('click', closeWindow);

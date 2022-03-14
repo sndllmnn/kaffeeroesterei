@@ -1,46 +1,38 @@
-.productDetailsSubpage {
-  background:white;
-}
-.singleProduct {
-  color: black;
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .productDetailsSubpage nav {
   top:0;
 }
 
-.singleProductTest {
-  color: black;
-  margin-top: 10vh;
+.productDetailsSubpage {
+  background: white;
+}
+
+.singleProduct {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  align-items: center;
+  margin-top: 12vh;
 }
 
-.singleProductTextWrapper {
-  padding: 0 5vw;
+.singleProduct h2, p {
+padding: 0 5vw;
 }
 
 .singleProductPrice {
   font-size: 1.3rem;
-  margin-top:2%;
+  margin: 1% 0 5% 0;
 }
-
 
 .singleProductImage {
   width: 90vw;
   background-color: #D7BE9D;
+  margin:auto;
 
 } 
 
 .coffeeAmountDropdown {
   width : 80vw; 
   background: #d9d9d9;
-  margin : 40px auto; 
+  margin : auto; 
 }
 
 .productDetailsSubpage span {

@@ -3,10 +3,10 @@
     "id": "0",
     "productName": "Kolumbien",
     "productImage": "../images/kaffeepackungCostaRica",
-    "price": "10€",
+    "price": "5 - 15 €",
     "url": "../subpages/productDetails1",
     "categories": ["coffeeBeans", "frenchPress", "coffeeScoop"],
-    "productDescription": "bla bla leckerer kaffeeyy",
+    "productDescription": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure.Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
     "variants": [
       {
         "name": "500g",

@@ -1,45 +1,53 @@
 import products from "../../products.json";
-import { categoryIcons } from "./icons.js";
 
-/*function createProductDetails() {
-    const productId = products.get('id');
+const productID = new URLSearchParams(window.location.search).get("id");
+const currentProduct = products.filter(
+  (product) => product.id === productID
+)[0];
+
+function createProductDetails() {
   const productSection = document.querySelector(".singleProduct");
 
   const productElement = document.createElement("div");
   productElement.classList.add("singleProduct");
 
-    const productImage = document.createElement("img");
-    ProductImage.classList.add('img--kaffeepackung--beigeBg'),
-      // (productImage.src = "/images/kaffeepackungCostaRicaGross.png");
+  const productTitle = document.createElement("h2");
+  productTitle.classList.add("singleProductTitle");
+  const productTitleText = document.createTextNode(currentProduct.productName);
 
-    const productTitle = document.createElement("p");
-    ProductTitle.classList.add("singleProductTitle");
-    // const productTitleText = document.createTextNode(product.productName);
+  const productImageWrapper = document.createElement("div");
+  productImageWrapper.classList.add("productImageWrapper");
 
-    const productPrice = document.createElement("p");
-    productPrice.classList.add("singleProductPrice");
-    // const productPriceText = document.createTextNode(product.price);
-
-    const productDescription = document.createElement("p");
-    productDescription.classList.add("singleProductDescription");
-    // const productTitleText = document.createTextNode(product.productDescription);
+  const productImage = document.createElement("img");
+  productImage.classList.add("singleProductImage"),
+    (productImage.src = "/images/kaffeepackungCostaRicaGross.png");
 
 
-    productTitle.appendChild(productTitleText);
-    productPrice.appendChild(productPriceText);
+  const productPrice = document.createElement("p");
+  productPrice.classList.add("singleProductPrice");
+  const productPriceText = document.createTextNode(currentProduct.price);
 
-    [productImage, productTitle, productPrice, productDescription].forEach( 
-      
-      ÄÄNDERN iN ID
+  const productDescription = document.createElement("p");
+  productDescription.classList.add("singleProductDescription");
+  const productDescriptionText = document.createTextNode(
+    currentProduct.productDescription);
 
-      
-      (element) => {
-        productElement.appendChild(element);
-      }
-    );
-    productSection.appendChild(productElement);
-  }; */
+  productTitle.appendChild(productTitleText);
+  productPrice.appendChild(productPriceText);
+  productDescription.appendChild(productDescriptionText);
+  productImageWrapper.appendChild(productImage);
 
+  [
+    productImageWrapper,
+    productImage,
+    productTitle,
+
+    productPrice,
+    productDescription,
+  ].forEach((element) => {
+    productSection.appendChild(element);
+  });
+};
 
 function navDesign() {
   const navBar = document.querySelector(".mainNav");
@@ -49,12 +57,13 @@ function navDesign() {
   const logoBlack = document.querySelector(".logo--black");
   navBar.classList.toggle("scrollingActive");
   burgerMenu.classList.toggle("scrollingActive");
-  logoWhite.classList.toggle('scrollingActive');
-  logoBlack.classList.toggle('scrollingActive');
+  logoWhite.classList.toggle("scrollingActive");
+  logoBlack.classList.toggle("scrollingActive");
 
   navKategorien.forEach((element) => {
-  element.classList.toggle('scrollingActive');
-  })
+    element.classList.toggle("scrollingActive");
+  });
 }
 
 window.addEventListener("DOMContentLoaded", navDesign);
+window.addEventListener("DOMContentLoaded", createProductDetails);
