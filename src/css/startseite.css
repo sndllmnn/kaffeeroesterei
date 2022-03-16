@@ -4,21 +4,19 @@
 }
 
 .startseite__header {
-background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
-padding:0;
+  background-image: url("../../images/kaffeetassen_roesterei_rustica_mobil.png");
+  padding: 0;
 }
-
 
 .header__content__text {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  margin-top:10vh;
+  margin-top: 10vh;
 }
 
-
 .header__content__text h1 {
-  margin-top:1%;
+  margin-top: 1%;
 }
 
 .burgerMenu {
@@ -37,6 +35,14 @@ padding:0;
   margin-top: 0;
 }
 
+.roesterei__infotext--left {
+  padding-left: 0;
+}
+
+.roesterei__infotext {
+  padding-left: 0;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   .header h1 {
@@ -44,7 +50,17 @@ padding:0;
     margin-top: 0;
   }
 
+  .startseite__kaffeesorten p {
+    padding-left: 0;
+  }
 
+  .footerInfos {
+    margin-right: 0;
+  }
+
+  .footerInfos p {
+    padding-right: 0;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -240,6 +256,8 @@ padding:0;
 
   .startseite__roesterei p {
     font-size: 1.6rem;
+    text-align: left;
+    padding: 0;
   }
 }
 
@@ -489,9 +507,9 @@ padding:0;
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-.herkunft p {
-  text-align: center;
-}
+  .herkunft p {
+    text-align: center;
+  }
 }
 
 /* Very large desktop devices (1920px and up) */
@@ -640,15 +658,14 @@ padding:0;
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-.dasStecktDrinInhalt .button {
-  margin:0;
-}
+  .dasStecktDrinInhalt .button {
+    margin: 0;
+  }
 
-.dasStecktDrin {
-  padding-bottom:10%;
+  .dasStecktDrin {
+    padding-bottom: 10%;
+  }
 }
-}
-
 
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
@@ -742,5 +759,3 @@ padding:0;
     height: 40vh;
   }
 }
-
- 

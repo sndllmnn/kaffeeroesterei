@@ -25,13 +25,14 @@
   margin-bottom: 0;
   margin-top: 1%;
   color: white;
+  padding-left:0;
 }
 
 .FooterTop {
   margin-bottom: 5%;
 }
 
-.FooterInfos div {
+.footerInfos div {
   margin-bottom: 15%;
 }
 
@@ -39,7 +40,7 @@
   width: 45vw;
 }
 
-.FooterInfos {
+.footerInfos {
   display: flex;
   justify-content: space-between;
   width: 85vw;
@@ -98,16 +99,21 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
-  .FooterInfos {
+  .footer * {
+    text-align: left;
+  }
+
+  .footerInfos {
     display: flex;
     justify-content: space-between;
     width: 85vw;
     height: 15vh;
   }
 
-  .footer {
-    padding-top: 20vh;
-  }
+.footer {
+margin-bottom: 10vh;
+padding-top:0;
+}
 
   .footer img {
     width: 4.5rem;
@@ -124,6 +130,7 @@
   .footer p,
   a {
     font-size: 2rem;
+    padding-left:0;
   }
 
   .footer a {

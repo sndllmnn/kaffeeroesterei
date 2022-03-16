@@ -30,7 +30,7 @@ function createProductDetails() {
   const productDescription = document.createElement("p");
   productDescription.classList.add("singleProductDescription");
   const productDescriptionText = document.createTextNode(
-    currentProduct.productDescription);
+  currentProduct.productDescription);
 
   productTitle.appendChild(productTitleText);
   productPrice.appendChild(productPriceText);
