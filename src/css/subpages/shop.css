@@ -28,7 +28,6 @@
 }
 
 .productImageWrapper {
-  background-color: #e9e9e9;
   display: flex;
   justify-content: center;
 }
@@ -36,10 +35,12 @@
 .img--kaffeepackung--greyBg {
   width: 40vw;
   cursor: pointer;
+  background: #E9E9E9;
 }
 
 .product p {
   margin: 2% 0;
+  padding:0;
 }
 
 .coffeePrice {
@@ -51,9 +52,7 @@
   height: 100%;
 }
 
-.shopSubpage .backButton {
-  margin: 15% auto 5% auto;
-}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
