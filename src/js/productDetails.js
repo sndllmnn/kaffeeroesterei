@@ -1,5 +1,6 @@
 import products from "../../products.json";
 
+const addToCartButton = document.querySelector('.shoppingCartButton');
 const productID = new URLSearchParams(window.location.search).get("id");
 const currentProduct = products.filter(
   (product) => product.id === productID
@@ -62,7 +63,20 @@ function navDesign() {
   navKategorien.forEach((element) => {
     element.classList.toggle("scrollingActive");
   });
-}
+};
+
+
+// add to cart
+
+function addToCart() {
+    const shoppingCart = [];
+    shoppingCart.push(currentProduct);
+    console.log(shoppingCart);
+};
+
+// add to cart end
 
 window.addEventListener("DOMContentLoaded", navDesign);
 window.addEventListener("DOMContentLoaded", createProductDetails);
+addToCartButton.addEventListener('click', addToCart);
+

@@ -1,9 +1,9 @@
 .productDetailsSubpage body {
-background: white;
+  background: white;
 }
 
 .productDetailsSubpage nav {
-  top:0;
+  top: 0;
 }
 
 .productDetailsSubpage {
@@ -17,76 +17,92 @@ background: white;
   margin-top: 12vh;
 }
 
-.singleProduct h2, p {
-padding: 0 5vw;
+.singleProduct h2,
+p {
+  padding: 0 5vw;
 }
 
 .singleProductPrice {
   font-size: 1.3rem;
-  margin: 1% 0 5% 0;
+  margin: 1% 0;
 }
 
 .singleProductImage {
   width: 90vw;
-  background-color: #D7BE9D;
-  margin:auto;
-} 
+  background-color: #d7be9d;
+  margin: auto;
+}
 
 .coffeeAmountDropdown {
-  width : 80vw; 
+  width: 80vw;
   height: 5vh;
-  margin : auto; 
+  margin: auto;
   font-size: 1em;
   font-family: inherit;
 }
 
-
-.productDetailsSubpage span {
-  padding : 5%;
-  background : white; 
-  border: 0.1rem solid;
-  font-size : 1em;
-  cursor : pointer;
-  display: block;
-}
-
-.coffeeAmountDropdown span::after {
-  float: right;
-  right: 10%;
-  /*content: "˅";*/
-}
-
 .productDetailsSubpage .slide {
-  clear:both;
-  width:100%;
-  height:0px;
+  clear: both;
+  width: 100%;
+  height: 0px;
   overflow: hidden;
   text-align: center;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
 }
 
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
 
-#touch {position: absolute; opacity: 0; height: 0px;}    
+#touch:checked + .slide {
+  height: 300px;
+}
 
-#touch:checked + .slide {height: 300px;} 
+/* shopping cart */ 
+.productViewCart {
+display: flex;
+width: 100vw;
+}
+
+.productViewCart img {
+width: 30%;
+margin: auto 0 auto 5vw;
+}
+
+.cartText p {
+margin:0 auto 2% 0;
+}
+
+.cartText .singleProductTitle {
+font-size: 1.5em;
+}
+
+.cartText .singleProducePrice {
+font-size: 1.2em;
+}
+
+.productAvailability,
+.singleProductTitle{
+font-weight: bold;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-
   .singleProductImage {
-width: 60vw;
-margin-top: 20px;
+    width: 60vw;
+    margin-top: 20px;
   }
 
   .singleProductPrice {
-    margin-bottom:0;
+    margin-bottom: 0;
     font-size: 2rem;
   }
 
   .productDetailsSubpage .backButton {
     margin-bottom: 5%;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -104,14 +120,10 @@ margin-top: 20px;
 /* Very large desktop devices (1920px and up) */
 @media screen and (min-width: 1920px) {
 }
- 
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-.singleProductImage {
-  width: 50vw;
+  .singleProductImage {
+    width: 50vw;
+  }
 }
-}
-
-
-
